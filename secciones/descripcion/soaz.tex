@@ -1,0 +1,29 @@
+\begin{longtblr}{
+		colspec = {
+			X[1,l]
+			X[3,l]
+		},
+		row{2,6} = {bg=SuCielo},
+		cell{3-5,7-9}{1} = {bg=gray!10},
+		row{Y} = {bg=gray!25}
+	}
+	\SetCell[r=1,c=2]{l} DESCRIPCIÓN DEL INSTRUMENTO \\
+    % sotano
+	\SetCell[r=1,c=2]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+	MARCA & \directlua{tex.print(f.variables.descripcion.sotano.marca)} \\
+	MODELO & \directlua{tex.print(f.variables.descripcion.sotano.modelo)} \\
+	SERIE & \directlua{tex.print(f.variables.descripcion.sotano.serie)} \\
+    % --------------
+    % azotea
+    \SetCell[r=1,c=2]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+	MARCA & \directlua{tex.print(f.variables.descripcion.azotea.marca)} \\
+	MODELO & \directlua{tex.print(f.variables.descripcion.azotea.modelo)} \\
+	SERIE & \directlua{tex.print(f.variables.descripcion.azotea.serie)} \\
+    % ---------------
+	\SetCell[r=1,c=2]{l} OBSERVACIONES \\
+	\SetCell[r=1,c=2]{l, 16cm} \begin{itemize}
+		\item Acelerógrafos triaxiales con \directlua{tex.print(f.variables.descripcion.sotano.tecnologia)} con transductores capacitivos
+		\item Topología triaxial - ortogonal
+		\item Módulos de registro y sensores de aceleración integrados
+	\end{itemize}
+\end{longtblr}

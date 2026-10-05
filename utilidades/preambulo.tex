@@ -9,6 +9,19 @@
 	vlines,
 	row{1}={bg=SuAzul, fg=white}
 }
+\SetTblrInner[longtblr]{
+	hlines,
+	vlines,	
+	row{1}={bg=SuAzul, fg=white}
+}
+\DeclareTblrTemplate{contfoot-text}{default}{}
+\DeclareTblrTemplate{conthead-text}{default}{}
+\SetTblrOuter[longtblr]{
+	entry = none,
+	label = none,
+	presep = 0pt,
+	postsep = 0pt
+}
 
 \usepackage{xcolor}
 \definecolor{SuAzul}{RGB}{31, 78, 120}

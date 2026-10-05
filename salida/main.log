@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.6.5)  5 OCT 2026 14:23
+This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.6.5)  5 OCT 2026 14:47
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -916,7 +916,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--19
 
  []
 
-[2] 
+(./secciones/descripcion/so.tex
+\g__cctab_tmpiv_cctab=\catcodetable18
+) [2]
+
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (C:/Users/Hyerson/Documents/GitHub/RPMNTTO-Acelerografos/salida/main.aux)
  ***********
@@ -926,18 +929,18 @@ L3 programming layer <2026-04-28>
 )
 
 Here is how much of LuaTeX's memory you used:
- 19405 strings out of 475892
+ 19436 strings out of 475892
  100000,953878 words of node,token memory allocated
  418 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 49 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 2:1708,3:206,4:71,5:124,6:58,7:2386,8:2,9:1578,10:12,11:64
- 41527 multiletter control sequences out of 65536+600000
+   avail lists: 2:2527,3:210,4:104,5:248,6:88,7:3970,8:3,9:2346,10:12,11:159
+ 41552 multiletter control sequences out of 65536+600000
  47 fonts using 23003759 bytes
- 107i,9n,110p,434b,1168s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,9n,118p,434b,1168s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/WINDOWS/Fonts/calibri.ttf><C:/WINDOWS/Fonts/calibrib.ttf><c:/users/hyerson/a
 ppdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-regular.otf>
-Output written on main.pdf (3 pages, 84847 bytes).
+Output written on main.pdf (3 pages, 87952 bytes).
 
 PDF statistics: 38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 1048576)

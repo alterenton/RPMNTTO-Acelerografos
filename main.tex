@@ -17,6 +17,13 @@
     \section{FECHA DE MANTENIMIENTO}
     \input{secciones/fecha}
 
-    %
+    \section{DESCRIPCIÓN DE LOS INSTRUMENTOS}
+    \begin{luacode*}
+        if f.variables.descripcion.estaciones == "so" then
+            tex.print("\\input{secciones/descripcion/so}")
+        elseif f.variables.descripcion.estaciones == "soaz" then
+            tex.print("\\input{secciones/descripcion/soaz}")
+        end
+    \end{luacode*}
 
 \end{document}
