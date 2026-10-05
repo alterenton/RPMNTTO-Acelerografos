@@ -1,0 +1,33 @@
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage{adjustbox}
+
+\usepackage{tabularray}
+\SetTblrInner[tblr]{
+	hlines,
+	vlines,
+	row{1}={bg=SuAzul, fg=white}
+}
+
+\usepackage{xcolor}
+\definecolor{SuAzul}{RGB}{31, 78, 120}
+\definecolor{SuCielo}{RGB}{219, 228, 240}
+
+\usepackage{luacode}
+\directlua{f=require("utilidades/funciones")}
+
+\usepackage{fontspec}
+\setmainfont{Calibri}
+
+\usepackage{lastpage}
+
+\usepackage{geometry}
+\geometry{
+	margin=1.5cm,
+	ignoremp,
+	includehead,
+	includefoot,
+	headsep=10pt,
+	headheight=40pt
+}

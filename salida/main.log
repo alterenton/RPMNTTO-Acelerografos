@@ -1,0 +1,945 @@
+This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.6.5)  5 OCT 2026 14:23
+ restricted system commands enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-04-28>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/Hyerson/AppData/Local/MiKT
+eX/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload
+/fontloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/Hyerson/AppData/Local/MiKT
+eX/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (C:/Users/Hyerson/AppDa
+ta/Local/Programs/MiKTeX/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/Hyerson/AppData/Local
+/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count274
+\c@section=\count275
+\c@subsection=\count276
+\c@subsubsection=\count277
+\c@paragraph=\count278
+\c@subparagraph=\count279
+\c@figure=\count280
+\c@table=\count281
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen149
+)
+(./utilidades/preambulo.tex
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/pgf/frontendlayer/tik
+z.sty
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.st
+y
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.
+sty
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfut
+il-common.tex
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen150
+\pgfutil@tempdimb=\dimen151
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfut
+il-latex.def
+\pgfutil@abb=\box53
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrc
+s.code.tex
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.te
+x)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcor
+e.sty
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics
+.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.d
+ef
+File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsy
+s.sty
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf
+sys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfke
+ys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfke
+yslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+))
+\pgf@x=\dimen154
+\pgf@y=\dimen155
+\pgf@xa=\dimen156
+\pgf@ya=\dimen157
+\pgf@xb=\dimen158
+\pgf@yb=\dimen159
+\pgf@xc=\dimen160
+\pgf@yc=\dimen161
+\pgf@xd=\dimen162
+\pgf@yd=\dimen163
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count282
+\c@pgf@countb=\count283
+\c@pgf@countc=\count284
+\c@pgf@countd=\count285
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
+\pgf@sys@id@count=\count286
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf
+.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf
+sys-luatex.def
+File: pgfsys-luatex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf
+sys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf
+syssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count287
+\pgfsyssoftpath@bigbuffer@items=\count288
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf
+sysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cf
+g
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.lt
+x)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+ore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.co
+de.tex
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathuti
+l.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathpar
+ser.code.tex
+\pgfmath@dimen=\dimen164
+\pgfmath@count=\count289
+\pgfmath@box=\box54
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfun
+ctions.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfun
+ctions.basic.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfun
+ctions.trigonometric.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfun
+ctions.random.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfun
+ctions.comparison.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfun
+ctions.base.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfun
+ctions.round.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfun
+ctions.misc.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfun
+ctions.integerarithmetics.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcal
+c.code.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathflo
+at.code.tex
+\c@pgfmathroundto@lastzeros=\count290
+))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.cod
+e.tex)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+orepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen165
+\pgf@picmaxx=\dimen166
+\pgf@picminy=\dimen167
+\pgf@picmaxy=\dimen168
+\pgf@pathminx=\dimen169
+\pgf@pathmaxx=\dimen170
+\pgf@pathminy=\dimen171
+\pgf@pathmaxy=\dimen172
+\pgf@xx=\dimen173
+\pgf@xy=\dimen174
+\pgf@yx=\dimen175
+\pgf@yy=\dimen176
+\pgf@zx=\dimen177
+\pgf@zy=\dimen178
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+orepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen179
+\pgf@path@lasty=\dimen180
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+orepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen181
+\pgf@shorten@start@additional=\dimen182
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+orescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box55
+\pgf@hbox=\box56
+\pgf@layerbox@main=\box57
+\pgf@picture@serial@count=\count291
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+oregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen183
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+oretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen184
+\pgf@pt@y=\dimen185
+\pgf@pt@temp=\dimen186
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+orequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+oreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+orepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+orearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen187
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+oreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen188
+\pgf@sys@shading@range@num=\count292
+\pgf@shadingcount=\count293
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+oreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+oreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box58
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+orelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+oretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+orepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfc
+orerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodu
+leshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box59
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodu
+leplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgf
+comp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen189
+\pgf@nodesepend=\dimen190
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgf
+comp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgffor.
+sty
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys
+.sty
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfke
+ys.code.tex))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/pgf/math/pgfmath.sty
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.co
+de.tex))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgffo
+r.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen191
+\pgffor@skip=\dimen192
+\pgffor@stack=\toks28
+\pgffor@toks=\toks29
+))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/t
+ikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgfli
+braryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count294
+\pgfplotmarksize=\dimen193
+)
+\tikz@lastx=\dimen194
+\tikz@lasty=\dimen195
+\tikz@lastxsaved=\dimen196
+\tikz@lastysaved=\dimen197
+\tikz@lastmovetox=\dimen198
+\tikz@lastmovetoy=\dimen199
+\tikzleveldistance=\dimen256
+\tikzsiblingdistance=\dimen257
+\tikz@figbox=\box60
+\tikz@figbox@bg=\box61
+\tikz@tempbox=\box62
+\tikz@tempbox@bg=\box63
+\tikztreelevel=\count295
+\tikznumberofchildren=\count296
+\tikznumberofcurrentchild=\count297
+\tikz@fig@count=\count298
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodu
+lematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count299
+\pgfmatrixcurrentcolumn=\count300
+\pgf@matrix@numberofcolumns=\count301
+)
+\tikz@expandcount=\count302
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/t
+ikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/t
+ikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjustbox.s
+ty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkeyval.tex
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.te
+x
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
+)
+\XKV@depth=\count303
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/trimclip.st
+y
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/collectbox/collectbox
+.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box64
+)
+\tc@llx=\dimen258
+\tc@lly=\dimen259
+\tc@urx=\dimen260
+\tc@ury=\dimen261
+Package trimclip Info: Using driver 'tc-luatex.def'.
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/tc-luatex.d
+ef
+File: tc-luatex.def 2025/02/26 v1.1 Clipping driver for luatex
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/tc-pdftex.d
+ef
+File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
+)))
+\adjbox@Width=\dimen262
+\adjbox@Height=\dimen263
+\adjbox@Depth=\dimen264
+\adjbox@Totalheight=\dimen265
+\adjbox@pwidth=\dimen266
+\adjbox@pheight=\dimen267
+\adjbox@pdepth=\dimen268
+\adjbox@ptotalheight=\dimen269
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/ifoddpage/ifoddpage.s
+ty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count304
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box65
+\sift@deathcycles=\count305
+\@vwid@loff=\dimen270
+\@vwid@roff=\dimen271
+)
+==> First Aid for varwidth.sty applied!
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/tabularray/tabularray
+.sty
+Package: tabularray 2025-11-27 v2025C Typeset tabulars and arrays with LaTeX3
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/ninecolors/ninecolors
+.sty
+Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xpa
+rse.sty
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-04-28 L3 programming layer (loader) 
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-l
+uatex.def
+File: l3backend-luatex.def 2026-02-18 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count306
+Inserting `l3color' in `luaotfload.parse_color'.))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+))
+\g__tblr_nohyper_int=\count307
+\l__tblr_a_int=\count308
+\l__tblr_c_int=\count309
+\l__tblr_r_int=\count310
+\l__tblr_d_dim=\dimen272
+\l__tblr_h_dim=\dimen273
+\l__tblr_o_dim=\dimen274
+\l__tblr_p_dim=\dimen275
+\l__tblr_q_dim=\dimen276
+\l__tblr_r_dim=\dimen277
+\l__tblr_s_dim=\dimen278
+\l__tblr_t_dim=\dimen279
+\l__tblr_v_dim=\dimen280
+\l__tblr_w_dim=\dimen281
+\l__tblr_a_box=\box66
+\l__tblr_b_box=\box67
+\l__tblr_c_box=\box68
+\l__tblr_d_box=\box69
+\c@tblrcount=\count311
+\c@rownum=\count312
+\c@colnum=\count313
+\c@rowcount=\count314
+\c@colcount=\count315
+\abovesep=\dimen282
+\belowsep=\dimen283
+\leftsep=\dimen284
+\rightsep=\dimen285
+\gTblrLevelInt=\count316
+\g__tblr_data_row_key_count_int=\count317
+\g__tblr_data_column_key_count_int=\count318
+\g__tblr_data_cell_key_count_int=\count319
+\g__tblr_array_int=\count320
+\l__tblr_key_count_int=\count321
+\l__tblr_key_quotient_int=\count322
+\l__tblr_key_quotient_two_int=\count323
+\l__tblr_key_remainder_int=\count324
+\g__tblr_data_str_value_count_int=\count325
+\lTblrChildTotalInt=\count326
+\lTblrChildHtotalInt=\count327
+\lTblrChildVtotalInt=\count328
+\l__child_diff_h_int=\count329
+\l__child_diff_v_int=\count330
+\l__child_sign_h_int=\count331
+\l__child_sign_v_int=\count332
+\l__child_step_int=\count333
+\lTblrDefaultHruleWidthDim=\dimen286
+\lTblrDefaultVruleWidthDim=\dimen287
+\l__tblr_split_balance_int=\count334
+\l__tblr_strut_dp_dim=\dimen288
+\l__tblr_strut_ht_dim=\dimen289
+\g__tblr_cell_wd_dim=\dimen290
+\g__tblr_cell_ht_dim=\dimen291
+\g__tblr_cell_head_dim=\dimen292
+\g__tblr_cell_foot_dim=\dimen293
+\l__tblr_measured_cell_box=\box70
+\g__tblr_last_box=\box71
+\l__tblr_temp_box=\box72
+\l__tblr_column_target_dim=\dimen294
+\l__tblr_hfuzz_dim=\dimen295
+\l__tblr_caption_box=\box73
+\l__tblr_caption_left_box=\box74
+\lTblrRowHeadInt=\count335
+\lTblrRowFootInt=\count336
+\l__tblr_row_head_box=\box75
+\l__tblr_row_foot_box=\box76
+\l__tblr_row_head_foot_dim=\dimen296
+\lTblrTableWidthDim=\dimen297
+\l__tblr_table_firsthead_box=\box77
+\l__tblr_table_middlehead_box=\box78
+\l__tblr_table_lasthead_box=\box79
+\l__tblr_table_firstfoot_box=\box80
+\l__tblr_table_middlefoot_box=\box81
+\l__tblr_table_lastfoot_box=\box82
+\l__tblr_remain_height_dim=\dimen298
+\l__tblr_next_rows_dim=\dimen299
+\l__tblr_page_overfill_dim=\dimen300
+\l__tblr_long_from_int=\count337
+\l__tblr_long_to_int=\count338
+\l__tblr_curr_i_int=\count339
+\l__tblr_prev_i_int=\count340
+\lTblrTablePageInt=\count341
+\l__tblr_table_head_box=\box83
+\l__tblr_table_foot_box=\box84
+\l__tblr_table_head_foot_dim=\dimen301
+\l__tblr_table_head_body_foot_dim=\dimen302
+\l__tblr_table_box=\box85
+\lTblrRowFirstInt=\count342
+\lTblrRowLastInt=\count343
+\l__tblr_cover_box_a_dim=\dimen303
+\l__tblr_cover_box_b_dim=\dimen304
+\l__tblr_table_hlines_box=\box86
+\l__tblr_hline_box=\box87
+\l__tblr_row_box=\box88
+\l__tblr_col_o_wd_dim=\dimen305
+\l__tblr_col_b_wd_dim=\dimen306
+\l__tblr_hline_leftskip_dim=\dimen307
+\l__tblr_hline_rightskip_dim=\dimen308
+\l__tblr_row_ht_dim=\dimen309
+\l__tblr_row_dp_dim=\dimen310
+\l__tblr_row_abovesep_dim=\dimen311
+\l__tblr_row_belowsep_dim=\dimen312
+\l__tblr_row_vlines_box=\box89
+\l__tblr_vline_box=\box90
+\l__tblr_cell_box=\box91
+\l__tblr_row_upper_dim=\dimen313
+\l__tblr_row_lower_dim=\dimen314
+\l__tblr_row_vpace_dim=\dimen315
+\l__tblr_vline_aboveskip_dim=\dimen316
+\l__tblr_vline_belowskip_dim=\dimen317
+\lTblrCellRowSpanInt=\count344
+\lTblrCellColSpanInt=\count345
+\l__tblr_cell_wd_dim=\dimen318
+\l__tblr_cell_ht_dim=\dimen319
+\lTblrCellAboveBorderWidthDim=\dimen320
+\lTblrCellBelowBorderWidthDim=\dimen321
+\lTblrCellLeftBorderWidthDim=\dimen322
+\lTblrCellRightBorderWidthDim=\dimen323
+\l__tblr_diag_box=\box92
+\l__tblr_cell_inner_wd_dim=\dimen324
+\l__tblr_cell_inner_dp_dim=\dimen325
+\l__tblr_cell_hanchor_dim=\dimen326
+\l__tblr_last_cell_table_ht_dim=\dimen327
+\l__tblr_last_cell_table_dp_dim=\dimen328
+\l__tblr_last_vline_wd_dim=\dimen329
+\l__tblr_tikz_node_box=\box93
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/lualatex/luacode/luacode.st
+y
+Package: luacode 2012/01/23 v1.2a lua-in-tex helpers (mpg)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/luatex/luatexbase/luatexbas
+e.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/luatex/ctablestack/ctablest
+ack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count346
+)
+\CatcodeTableOther=\catcodetable14
+\CatcodeTableExpl=\catcodetable15
+)
+\luacode@lines=\toks32
+\luacode@table@soft=\catcodetable16
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec-lua
+tex.sty
+Package: fontspec-luatex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count347
+\l__fontspec_language_int=\count348
+\l__fontspec_strnum_int=\count349
+\l__fontspec_tmp_int=\count350
+\l__fontspec_tmpa_int=\count351
+\l__fontspec_tmpb_int=\count352
+\l__fontspec_tmpc_int=\count353
+\l__fontspec_em_int=\count354
+\l__fontspec_emdef_int=\count355
+\l__fontspec_strong_int=\count356
+\l__fontspec_strongdef_int=\count357
+\l__fontspec_tmpa_dim=\dimen330
+\l__fontspec_tmpb_dim=\dimen331
+\l__fontspec_tmpc_dim=\dimen332
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.cfg
+)))
+luaotfload | cache : Lookup cache loaded from C:/Users/Hyerson/AppData/Local/MiK
+TeX/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+
+Package fontspec Info: 
+(fontspec)             Font family 'Calibri(0)' created for font 'Calibri'
+(fontspec)             with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"name:Calibri:mode=node;script=latn;language=dflt;+tl
+ig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"name:Calibri:mode=node;script=latn;language=dflt;+tl
+ig;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"name:Calibri/B:mode=node;script=latn;language=dflt;+
+tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"name:Calibri/B:mode=node;script=latn;language=dflt;+
+tlig;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"name:Calibri/I:mode=node;script=latn;language=dflt;+
+tlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"name:Calibri/I:mode=node;script=latn;language=dflt;+
+tlig;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"name:Calibri/BI:mode=node;script=latn;language=dflt;
++tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"name:Calibri/BI:mode=node;script=latn;language=dflt;
++tlig;+smcp;"
+
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2025/08/14 v2.1h lastpage: 2.09 or 2e? (HMM)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/lastpage/lastpage2e.s
+ty
+Package: lastpage2e 2025/08/14 v2.1h Decide which 2e lastpage version to use (H
+MM)
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/lastpage/lastpagemode
+rn.sty
+Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count358
+) 
+))
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count359
+\Gm@cntv=\count360
+\c@Gm@tempcnt=\count361
+\Gm@bindingoffset=\dimen333
+\Gm@wd@mp=\dimen334
+\Gm@odd@mp=\dimen335
+\Gm@even@mp=\dimen336
+\Gm@layoutwidth=\dimen337
+\Gm@layoutheight=\dimen338
+\Gm@layouthoffset=\dimen339
+\Gm@layoutvoffset=\dimen340
+\Gm@dimlist=\toks33
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg
+))) (./utilidades/variables.tex) (./utilidades/configuraciones.tex)
+(C:/Users/Hyerson/Documents/GitHub/RPMNTTO-Acelerografos/salida/main.aux)
+\openout1 = main.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.
+mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count362
+\scratchdimen=\dimen341
+\scratchbox=\box94
+\nofMPsegments=\count363
+\nofMParguments=\count364
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count365
+\MPscratchDim=\dimen342
+\MPnumerator=\count366
+\makeMPintoPDFobject=\count367
+\everyMPtoPDFconversion=\toks35
+)
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf
+-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/Hyerson/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys
+.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 7.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 7.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 7.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 7.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 7.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 7.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 7.
+LaTeX Font Info:    Redeclaring math accent \check on input line 7.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 7.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 7.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 7.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 7.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 7.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/Calibri(0)/m/n on input line 7.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 7.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/Calibri(0)/m/n on input line 7.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/Calibri(0)/m/n --> TU/Calibri(0)/m/n on input line 7
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/Calibri(0)/m/it on input line 7.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/Calibri(0)/b/n on input line 7.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 7.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 7.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/Calibri(0)/m/n --> TU/Calibri(0)/b/n on input line 7
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/Calibri(0)/b/it on input line 7.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 7.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 7.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=512.14963pt
+* \textheight=679.6886pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-29.59087pt
+* \headheight=40.0pt
+* \headsep=10.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./secciones/caratula.tex
+<utilidades/img/LogoInsitel.png, id=4, 241.65282pt x 67.75313pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 36.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 36.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 36.
+<utilidades/img/FirmaJuanCarlos.jpg, id=5, 143.883pt x 118.917pt>
+ [1
+
+{C:/Users/Hyerson/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}])
+(C:/Users/Hyerson/Documents/GitHub/RPMNTTO-Acelerografos/salida/main.toc)
+\tf@toc=\write4
+
+\openout4 = main.toc
+
+[1] (./secciones/datos.tex
+\g__cctab_tmpiii_cctab=\catcodetable17
+)
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+
+ []
+
+(./secciones/fecha.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 13--19
+
+ []
+
+[2] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(C:/Users/Hyerson/Documents/GitHub/RPMNTTO-Acelerografos/salida/main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-04-28>
+ ***********
+)
+
+Here is how much of LuaTeX's memory you used:
+ 19405 strings out of 475892
+ 100000,953878 words of node,token memory allocated
+ 418 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 49 glue_spec,
+ 5 attribute_list, 2 write nodes
+   avail lists: 2:1708,3:206,4:71,5:124,6:58,7:2386,8:2,9:1578,10:12,11:64
+ 41527 multiletter control sequences out of 65536+600000
+ 47 fonts using 23003759 bytes
+ 107i,9n,110p,434b,1168s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/WINDOWS/Fonts/calibri.ttf><C:/WINDOWS/Fonts/calibrib.ttf><c:/users/hyerson/a
+ppdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-regular.otf>
+Output written on main.pdf (3 pages, 84847 bytes).
+
+PDF statistics: 38 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 1048576)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
+

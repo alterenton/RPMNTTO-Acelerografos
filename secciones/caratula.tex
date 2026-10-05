@@ -1,0 +1,71 @@
+\begin{titlepage}
+
+    \begin{tikzpicture}[remember picture, overlay]
+        % Coordenadas
+        \path
+        ($(current page.north west)!0.5!(current page.center)$)coordinate(Aa) --
+		($(current page.north east)!0.5!(current page.center)$)coordinate(Ab) --
+		($(current page.south west)!0.5!(current page.center)$)coordinate(Ba) --
+		($(current page.south east)!0.5!(current page.center)$)coordinate(Bb) ;
+        % ------------
+
+        % Espacio
+        \fill[white] (current page.north west) rectangle (current page.south east);
+        % ----------
+
+        % Línea del medio
+        \draw[black] ([yshift=-2cm]current page.north) -- ([yshift=2cm]current page.south);
+        % ------------
+
+        % Logo de la empresa
+        \node[yshift=1cm] at (Aa) [anchor=south]{\adjincludegraphics[width=8cm]{utilidades/img/LogoInsitel}};
+        % ------------------
+
+        % Contenido del lado derecho
+        \node[yshift=1cm] at (Ab) [anchor=north]{
+			\begin{tblr}{
+					colspec = {X[l]},
+					width = 8cm,
+					row{1} = {fg=SuAzul, bg=white, font=\LARGE\bfseries},
+					row{2} = {font=\Large},
+					vlines = 0pt,
+					hlines = 0pt
+				}
+				\tipodocumento: \\[1cm]
+				INFORME DE MANTENIMIENTO PARA LA ESTACIÓN ACELEROMÉTRICA INSTALADA EN EL EDIFICIO ``{\color{SuAzul} \MakeUppercase{\directlua{tex.print(f.variables.caratula.edificio)}}}"
+			\end{tblr}
+		};
+        % -------------------
+
+        % Contenido del lado izquierdo
+        \node at (Ba) [anchor=south]{
+			\begin{tblr}{
+					colspec = {X[r]},
+					width = 7.5cm,
+					row{1,4,6,8} = {bg=white, fg=SuAzul, font=\large\bfseries},
+					vlines = 0pt,
+					hlines = 0pt
+				}
+				ELABORADO POR: \\
+				Oficina Técnica INSITEL \\
+				N° de folios: \pageref{LastPage} \\[1cm]
+				CONTRATISTA: \\
+				Instrumentación Sísmica y Telemetría SAC - INSITEL \\[1cm]
+				CLIENTE: \\
+				\elcliente \\[1cm]
+				\tipodocumento: \\
+				N° \tiposigla-2026-0\directlua{tex.print(f.variables.caratula.nro_informe)} \\
+			\end{tblr}
+		};
+        % ----------------
+
+        % Firma
+        \node at (Bb) [anchor=north]{\adjincludegraphics[width=3cm]{utilidades/img/FirmaJuanCarlos}};
+        % -------------
+
+        % Píe de página
+        \node[font=\bfseries] at ([yshift=1cm]current page.south) [anchor=south]{INSITEL - Lima Perú, 2026};
+        % ---------------
+    \end{tikzpicture}
+
+\end{titlepage}

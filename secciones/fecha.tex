@@ -1,0 +1,13 @@
+\begin{tblr}{
+		colspec = {
+			*{4}{X[c]}
+		},
+		row{2} = {valign=m, bg=gray!10}
+	}
+	\SetCell[r=1,c=4]{l} FECHA DE MANTENIMIENTO \\
+	NOMBRE DEL DOCUMENTO & FECHA PROGRAMADA & ESTADO & TIPO DE MANTENIMIENTO \\
+	RPMNTTO-2026-0\directlua{tex.print(f.variables.caratula.nro_informe)} &
+	\directlua{tex.print(f.variables.fecha.muestra(f.variables.fecha))} &
+	Ejecutado &
+	Preventivo \\		
+\end{tblr}
