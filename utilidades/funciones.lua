@@ -52,7 +52,7 @@ local marcas = {
     ritar = {
         name = "RITAR",
         web = "https://www.ritarpower.com/",
-        mode = "RT12120 (12VDC/12Ah)"
+        mode = "RT12120 (12V/12Ah)"
     }
 }
 

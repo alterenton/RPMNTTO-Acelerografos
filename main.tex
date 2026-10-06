@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt, final]{article}
+\documentclass[a4paper, 12pt, draft]{article}
 
 \input{utilidades/preambulo}
 \input{utilidades/variables}
@@ -248,6 +248,23 @@
     \end{tblr}
     % 
     % <<<<<<<<<<<<<<
+	% final
+	\subsubsection{SITUACIÓN FINAL}
+	\begin{tblr}{
+		colspec={X},
+		row{2} = {bg=SuCielo},
+		row{Y} = {bg=gray!25},
+	}
+		SITUACIÓN FINAL \\
+		ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+		\adjincludegraphics[width=\linewidth]{pantallazos/sotano/final1.png} \\
+		OBSERVACIONES \\
+		\begin{itemize}
+			\item Vista general del equipo ubicado en el \directlua{tex.print(f.variables.descripcion.sotano.ubicacion)} al culminar el mantenimiento.
+			\item Pestaña de resumen en la interfaz gráfica de Usuario - Web GUI.
+		\end{itemize}
+	\end{tblr}
+	% <<<<<<<<<<<<<
     % --------------
     % AZOTEA
     \subsection{ESTACIÓN ACELEROMÉTRICA \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}}}
@@ -462,6 +479,23 @@
     \end{tblr}
     % 
     % <<<<<<<<<<<<<<
+	% final
+	\subsubsection{SITUACIÓN FINAL}
+	\begin{tblr}{
+		colspec={X},
+		row{2} = {bg=SuCielo},
+		row{Y} = {bg=gray!25},
+	}
+		SITUACIÓN FINAL \\
+		ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+		\adjincludegraphics[width=\linewidth]{pantallazos/azotea/final1.png} \\
+		OBSERVACIONES \\
+		\begin{itemize}
+			\item Vista general del equipo ubicado en el \directlua{tex.print(f.variables.descripcion.azotea.ubicacion)} al culminar el mantenimiento.
+			\item Pestaña de Status en la interfaz gráfica de Usuario - Web GUI.
+		\end{itemize}
+	\end{tblr}
+	% <<<<<<<<<<<<<
     % -------------
 
     \section{FORMATO DE POLOS Y CEROS}
