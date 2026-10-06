@@ -1,0 +1,177 @@
+\begin{longtblr}{
+		colspec = {X[1.5,l]*{6}{X[1.5,c]}},
+		row{6,7,10,11} = {valign=m},
+		row{2} = {bg=SuCielo},
+		row{3,8,12} = {bg=gray!25},
+		cell{4-5,9}{2-7} = {bg=gray!10},
+		cell{6-7,10-11}{1} = {bg=gray!10}
+	}
+	\SetCell[r=1,c=7]{l} ESTADO DEL SENSOR INTERNO \\
+	% sotano
+	\SetCell[r=1,c=7]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+	\SetCell[r=1,c=7]{l} CENTRADO DE MASA EN LOS TRES CANALES \\
+	\SetCell[r=2,c=1]{c} &
+	\SetCell[r=1,c=3]{c} ANTES DEL MANTENIMIENTO &&&
+	\SetCell[r=1,c=3]{c} DESPUÉS DEL MANTENIMIENTO \\
+	& Ch Z & Ch N & Ch E & Ch Z & Ch N & Ch E \\
+	NIVEL DE OFFSET &
+	\directlua{tex.print((f.variables.sensor.sotano.offset.antes.chz.max+f.variables.sensor.sotano.offset.antes.chz.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.sotano.offset.antes.chz.ext)}} &
+	\directlua{tex.print((f.variables.sensor.sotano.offset.antes.chn.max+f.variables.sensor.sotano.offset.antes.chn.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.sotano.offset.antes.chn.ext)}} &
+	\directlua{tex.print((f.variables.sensor.sotano.offset.antes.che.max+f.variables.sensor.sotano.offset.antes.che.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.sotano.offset.antes.che.ext)}} &
+	\directlua{tex.print((f.variables.sensor.sotano.offset.despues.chz.max+f.variables.sensor.sotano.offset.despues.chz.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.sotano.offset.despues.chz.ext)}} &
+	\directlua{tex.print((f.variables.sensor.sotano.offset.despues.chn.max+f.variables.sensor.sotano.offset.despues.chn.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.sotano.offset.despues.chn.ext)}} &
+	\directlua{tex.print((f.variables.sensor.sotano.offset.despues.che.max+f.variables.sensor.sotano.offset.despues.che.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.sotano.offset.despues.che.ext)}} \\
+	VALOR EFICAZ RMS &
+	\directlua{tex.print(f.variables.sensor.sotano.eficaz.antes.chz)} \unit{\directlua{tex.print(f.variables.sensor.sotano.eficaz.extension)}} &
+	\directlua{tex.print(f.variables.sensor.sotano.eficaz.antes.chn)} \unit{\directlua{tex.print(f.variables.sensor.sotano.eficaz.extension)}} &
+	\directlua{tex.print(f.variables.sensor.sotano.eficaz.antes.che)} \unit{\directlua{tex.print(f.variables.sensor.sotano.eficaz.extension)}} &
+	\directlua{tex.print(f.variables.sensor.sotano.eficaz.despues.chz)} \unit{\directlua{tex.print(f.variables.sensor.sotano.eficaz.extension)}} &
+	\directlua{tex.print(f.variables.sensor.sotano.eficaz.despues.chn)} \unit{\directlua{tex.print(f.variables.sensor.sotano.eficaz.extension)}} &
+	\directlua{tex.print(f.variables.sensor.sotano.eficaz.despues.che)} \unit{\directlua{tex.print(f.variables.sensor.sotano.eficaz.extension)}} \\
+	\SetCell[r=1,c=7]{l} CALIBRACIÓN DEL SENSOR \\
+	& \SetCell[r=1,c=2]{c} FORMA DE ONDA &&
+	\SetCell[r=1,c=2]{c} AMPLITUD &&
+	\SetCell[r=1,c=2]{c} FRECUENCIA \\
+	SEÑAL DE CALIBRACIÓN &
+	\SetCell[r=1,c=2]{c} \directlua{tex.print(f.variables.sensor.onda)} &&
+	\SetCell[r=1,c=2]{c} \qty{1.0}{\volt} &&
+	\SetCell[r=1,c=2]{c} \qty{0.25}{\hertz} \\
+	SEÑAL CORREGIDA PROMEDIO &
+	\SetCell[r=1,c=2]{c} \directlua{tex.print(f.variables.sensor.onda)} &&
+	\SetCell[r=1,c=2]{c} \qty{\directlua{tex.print((f.variables.sensor.sotano.calibracion.vertical.aceleracion.amp+f.variables.sensor.sotano.calibracion.norte.aceleracion.amp+f.variables.sensor.sotano.calibracion.este.aceleracion.amp)/3)}}{\centi\meter\per\square\second} &&
+	\SetCell[r=1,c=2]{c} \qty{0.25}{\hertz} \\
+	\SetCell[r=1,c=7]{l} OBSERVACIONES \\
+	\SetCell[r=1,c=7]{l, 17cm} \begin{itemize}
+		\item Ajuste del nivel de offset en los tres canales, el valor promedio en cada canal se debería de encontrar por debajo del umbral de disparo [\qty{1}{\percent g} = \qty{10}{\milli g}].
+		\item Con el archivo de calibración se procedió a realizar la corrección instrumental y verificar su valor en cuentas, siendo los valores en cada eje los siguientes:
+		\begin{itemize}
+			\item VERTICAL: [ \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.vertical.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.vertical.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.vertical.aceleracion.amp)}}{\centi\meter\per\square\second}
+			\item NORTE SUR: [ \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.norte.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.norte.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.norte.aceleracion.amp)}}{\centi\meter\per\square\second}
+			\item ESTE OESTE: [ \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.este.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.este.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.este.aceleracion.amp)}}{\centi\meter\per\square\second}
+		\end{itemize}
+		\item Con el espectrograma se obtiene la frecuencia de la onda \directlua{tex.print(f.variables.sensor.onda)} registrada en \qty{0.25}{\hertz}.
+		\item Para la reconstrucción de la señal en términos de aceleración se utilizó la respuesta instrumental mostrada en el <Apartado \ref{sec:formato}: Formato de Polos y Ceros>~de este informe.
+	\end{itemize}
+	% ---------
+\end{longtblr}
+
+\csvautolongtabularray[
+	separator = semicolon,
+	range = 2-,
+	table head = {
+		\SetCell[c=7]{l} ESTADO DEL SENSOR INTERNO \\
+		\SetCell[c=7]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+		\SetCell[c=7]{l} VALIDACIÓN CON SISMOS REGISTRADOS \\
+		\SetCell[r=2]{c} Ev. & \SetCell[r=2]{c} Referencia & \SetCell[r=2]{c} Mg. & \SetCell[r=2]{c} Hora & \SetCell[c=3]{c} PGA (\unit{\milli\meter\per\square\second}) \\
+		&&&& E-W & N-S & V \\
+	},
+	table foot = {
+		\SetCell[c=7]{l} OBSERVACIONES \\
+		\SetCell[c=7]{l, 17cm} \begin{itemize}
+		\item Se presentan los sismos publicados por el Instituto Geofísico del Perú - IGP durante el período de descarga superiores a 4.0 ML.
+		\item Se observa que el sismo más significativo registrado dentro del período de descarga ha sido el acontecido en el \directlua{tex.print(f.buscar_pga_maximo('ondas/sotano/pga.csv').hora)} a \directlua{tex.print(f.buscar_pga_maximo('ondas/sotano/pga.csv').referencia)} con un impacto de \directlua{tex.print(f.buscar_pga_maximo('ondas/sotano/pga.csv').magnitud)} ML.
+		\item Las formas de onda de los acelerogramas se presentan en el <Apartado \ref{sec:formas}: Formas de Onda>
+		\end{itemize} \\
+	}
+]{ondas/sotano/pga.csv}[
+	colspec = {
+		X[0.5,c]
+		X[5,c]
+		X[0.5,c]
+		X[1.25,c]
+		*{3}{X[0.5,c]}
+	},
+	row{2} = {bg=SuCielo},
+	row{3,Y} = {bg=gray!25},
+	row{4-5} = {bg=gray!10},
+	cell{every[2]{7}{-3}}{1-Z} = {bg=gray!5}
+]
+
+\begin{longtblr}{
+		colspec = {X[1.5,l]*{6}{X[1.5,c]}},
+		row{6,7,10,11} = {valign=m},
+		row{2} = {bg=SuCielo},
+		row{3,8,12} = {bg=gray!25},
+		cell{4-5,9}{2-7} = {bg=gray!10},
+		cell{6-7,10-11}{1} = {bg=gray!10}
+	}
+	\SetCell[r=1,c=7]{l} ESTADO DEL SENSOR INTERNO \\
+	% azotea
+	\SetCell[r=1,c=7]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+	\SetCell[r=1,c=7]{l} CENTRADO DE MASA EN LOS TRES CANALES \\
+	\SetCell[r=2,c=1]{c} &
+	\SetCell[r=1,c=3]{c} ANTES DEL MANTENIMIENTO &&&
+	\SetCell[r=1,c=3]{c} DESPUÉS DEL MANTENIMIENTO \\
+	& Ch Z & Ch N & Ch E & Ch Z & Ch N & Ch E \\
+	NIVEL DE OFFSET &
+	\directlua{tex.print((f.variables.sensor.azotea.offset.antes.chz.max+f.variables.sensor.azotea.offset.antes.chz.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.azotea.offset.antes.chz.ext)}} &
+	\directlua{tex.print((f.variables.sensor.azotea.offset.antes.chn.max+f.variables.sensor.azotea.offset.antes.chn.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.azotea.offset.antes.chn.ext)}} &
+	\directlua{tex.print((f.variables.sensor.azotea.offset.antes.che.max+f.variables.sensor.azotea.offset.antes.che.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.azotea.offset.antes.che.ext)}} &
+	\directlua{tex.print((f.variables.sensor.azotea.offset.despues.chz.max+f.variables.sensor.azotea.offset.despues.chz.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.azotea.offset.despues.chz.ext)}} &
+	\directlua{tex.print((f.variables.sensor.azotea.offset.despues.chn.max+f.variables.sensor.azotea.offset.despues.chn.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.azotea.offset.despues.chn.ext)}} &
+	\directlua{tex.print((f.variables.sensor.azotea.offset.despues.che.max+f.variables.sensor.azotea.offset.despues.che.min)/2)} \unit{\directlua{tex.print(f.variables.sensor.azotea.offset.despues.che.ext)}} \\
+	VALOR EFICAZ RMS &
+	\directlua{tex.print(f.variables.sensor.azotea.eficaz.antes.chz)} \unit{\directlua{tex.print(f.variables.sensor.azotea.eficaz.extension)}} &
+	\directlua{tex.print(f.variables.sensor.azotea.eficaz.antes.chn)} \unit{\directlua{tex.print(f.variables.sensor.azotea.eficaz.extension)}} &
+	\directlua{tex.print(f.variables.sensor.azotea.eficaz.antes.che)} \unit{\directlua{tex.print(f.variables.sensor.azotea.eficaz.extension)}} &
+	\directlua{tex.print(f.variables.sensor.azotea.eficaz.despues.chz)} \unit{\directlua{tex.print(f.variables.sensor.azotea.eficaz.extension)}} &
+	\directlua{tex.print(f.variables.sensor.azotea.eficaz.despues.chn)} \unit{\directlua{tex.print(f.variables.sensor.azotea.eficaz.extension)}} &
+	\directlua{tex.print(f.variables.sensor.azotea.eficaz.despues.che)} \unit{\directlua{tex.print(f.variables.sensor.azotea.eficaz.extension)}} \\
+	\SetCell[r=1,c=7]{l} CALIBRACIÓN DEL SENSOR \\
+	& \SetCell[r=1,c=2]{c} FORMA DE ONDA &&
+	\SetCell[r=1,c=2]{c} AMPLITUD &&
+	\SetCell[r=1,c=2]{c} FRECUENCIA \\
+	SEÑAL DE CALIBRACIÓN &
+	\SetCell[r=1,c=2]{c} \directlua{tex.print(f.variables.sensor.onda)} &&
+	\SetCell[r=1,c=2]{c} \qty{1.0}{\volt} &&
+	\SetCell[r=1,c=2]{c} \qty{0.25}{\hertz} \\
+	SEÑAL CORREGIDA PROMEDIO &
+	\SetCell[r=1,c=2]{c} \directlua{tex.print(f.variables.sensor.onda)} &&
+	\SetCell[r=1,c=2]{c} \qty{\directlua{tex.print((f.variables.sensor.azotea.calibracion.vertical.aceleracion.amp+f.variables.sensor.azotea.calibracion.norte.aceleracion.amp+f.variables.sensor.azotea.calibracion.este.aceleracion.amp)/3)}}{\centi\meter\per\square\second} &&
+	\SetCell[r=1,c=2]{c} \qty{0.25}{\hertz} \\
+	\SetCell[r=1,c=7]{l} OBSERVACIONES \\
+	\SetCell[r=1,c=7]{l, 17cm} \begin{itemize}
+		\item Ajuste del nivel de offset en los tres canales, el valor promedio en cada canal se debería de encontrar por debajo del umbral de disparo [\qty{1}{\percent g} = \qty{10}{\milli g}].
+		\item Con el archivo de calibración se procedió a realizar la corrección instrumental y verificar su valor en cuentas, siendo los valores en cada eje los siguientes:
+		\begin{itemize}
+			\item VERTICAL: [ \qty{\directlua{tex.print(f.variables.sensor.azotea.calibracion.vertical.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.azotea.calibracion.vertical.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.azotea.calibracion.vertical.aceleracion.amp)}}{\centi\meter\per\square\second}
+			\item NORTE SUR: [ \qty{\directlua{tex.print(f.variables.sensor.azotea.calibracion.norte.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.azotea.calibracion.norte.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.azotea.calibracion.norte.aceleracion.amp)}}{\centi\meter\per\square\second}
+			\item ESTE OESTE: [ \qty{\directlua{tex.print(f.variables.sensor.azotea.calibracion.este.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.azotea.calibracion.este.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.azotea.calibracion.este.aceleracion.amp)}}{\centi\meter\per\square\second}
+		\end{itemize}
+		\item Con el espectrograma se obtiene la frecuencia de la onda \directlua{tex.print(f.variables.sensor.onda)} registrada en \qty{0.25}{\hertz}.
+		\item Para la reconstrucción de la señal en términos de aceleración se utilizó la respuesta instrumental mostrada en el <Apartado \ref{sec:formato}: Formato de Polos y Ceros>~de este informe.
+	\end{itemize}
+	% ---------
+\end{longtblr}
+
+\csvautolongtabularray[
+	separator = semicolon,
+	range = 2-,
+	table head = {
+		\SetCell[c=7]{l} ESTADO DEL SENSOR INTERNO \\
+		\SetCell[c=7]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+		\SetCell[c=7]{l} VALIDACIÓN CON SISMOS REGISTRADOS \\
+		\SetCell[r=2]{c} Ev. & \SetCell[r=2]{c} Referencia & \SetCell[r=2]{c} Mg. & \SetCell[r=2]{c} Hora & \SetCell[c=3]{c} PGA (\unit{\milli\meter\per\square\second}) \\
+		&&&& E-W & N-S & V \\
+	},
+	table foot = {
+		\SetCell[c=7]{l} OBSERVACIONES \\
+		\SetCell[c=7]{l, 17cm} \begin{itemize}
+		\item Se presentan los sismos publicados por el Instituto Geofísico del Perú - IGP durante el período de descarga superiores a 4.0 ML.
+		\item Se observa que el sismo más significativo registrado dentro del período de descarga ha sido el acontecido en el \directlua{tex.print(f.buscar_pga_maximo('ondas/azotea/pga.csv').hora)} a \directlua{tex.print(f.buscar_pga_maximo('ondas/azotea/pga.csv').referencia)} con un impacto de \directlua{tex.print(f.buscar_pga_maximo('ondas/azotea/pga.csv').magnitud)} ML.
+		\item Las formas de onda de los acelerogramas se presentan en el <Apartado \ref{sec:formas}: Formas de Onda>
+		\end{itemize} \\
+	}
+]{ondas/azotea/pga.csv}[
+	colspec = {
+		X[0.5,c]
+		X[5,c]
+		X[0.5,c]
+		X[1.25,c]
+		*{3}{X[0.5,c]}
+	},
+	row{2} = {bg=SuCielo},
+	row{3,Y} = {bg=gray!25},
+	row{4-5} = {bg=gray!10},
+	cell{every[2]{7}{-3}}{1-Z} = {bg=gray!5}
+]

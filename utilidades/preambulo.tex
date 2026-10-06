@@ -1,7 +1,10 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .jpeg, .png}
 \usepackage{adjustbox}
+\usepackage{float}
 
 \usepackage{tabularray}
 \SetTblrInner[tblr]{
@@ -19,9 +22,10 @@
 \SetTblrOuter[longtblr]{
 	entry = none,
 	label = none,
-	presep = 0pt,
-	postsep = 0pt
+	presep = 6pt,
+	postsep = 6pt
 }
+\UseTblrLibrary{varwidth}
 
 \usepackage{xcolor}
 \definecolor{SuAzul}{RGB}{31, 78, 120}
@@ -44,3 +48,55 @@
 	headsep=10pt,
 	headheight=40pt
 }
+
+\usepackage{siunitx}
+\sisetup{
+	mode = text,
+	round-mode = places,
+	per-mode = symbol
+}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\color{SuAzul}\Large\bfseries}
+{\thesection}
+{1ex}
+{}
+\titlespacing{\section}
+{0pt}
+{2ex}
+{1ex}
+\titleformat{\subsection}
+{\color{SuAzul}\large\bfseries}
+{\thesubsection}
+{1ex}
+{}
+\titlespacing{\subsection}
+{0pt}
+{2ex}
+{1ex}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[scale=0.55]{utilidades/img/LogoInsitel}}
+\fancyhead[R]{
+	{\color{gray} Av. La Fontana 1159 - La Molina - Lima - Perú}\\
+	{\color{gray} E-mail:} {\color{SuAzul} \url{info@insitel.pe}} - {\color{SuAzul} \url{ventas@insitel.pe}}\\
+	{\color{gray} Contacto: +51 951 332 375}
+}
+\fancyfoot[L]{
+	{\color{gray} INSTRUMENTACIÓN SÍSMICA Y TELEMETRÍA SAC}\\
+	{\color{gray} Website:} {\color{SuAzul} \url{www.insitel.pe}}
+}
+\fancyfoot[C]{}
+\fancyfoot[R]{
+	{\color{gray} Página \thepage~de \pageref{LastPage}}
+}
+\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\headrulewidth}{1pt}
+
+\usepackage[hidelinks]{hyperref}
+\urldef{\Enlace}\url{https://mega.nz/folder/WZATGTDJ#h43ejNyeOI2JgiGin5kpuA}
+\urlstyle{sf}
+
+\usepackage{csvsimple-l3}

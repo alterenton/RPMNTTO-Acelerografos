@@ -1,0 +1,31 @@
+\subsection{ESTACIÓN ACELEROMÉTRICA \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}}}
+\csvreader[
+head to column names,
+separator=semicolon
+]{ondas/sotano/pga.csv}{}{
+	\subsubsection*{Evento \Evento}
+	\begin{figure}[H]
+		\centering
+		\adjincludegraphics[height=10cm]{ondas/sotano/evento_\Evento_180min.pdf}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\adjincludegraphics[height=10cm]{ondas/sotano/evento_\Evento_10min.pdf}
+	\end{figure}
+}
+
+\subsection{ESTACIÓN ACELEROMÉTRICA \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}}}
+\csvreader[
+head to column names,
+separator=semicolon
+]{ondas/azotea/pga.csv}{}{
+	\subsubsection*{Evento \Evento}
+	\begin{figure}[H]
+		\centering
+		\adjincludegraphics[height=10cm]{ondas/azotea/evento_\Evento_180min.pdf}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\adjincludegraphics[height=10cm]{ondas/azotea/evento_\Evento_10min.pdf}
+	\end{figure}
+}

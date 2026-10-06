@@ -1,0 +1,262 @@
+\subsection{ESTACIÓN ACELEROMÉTRICA \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}}}
+\subsubsection{RESPUESTA INSTRUMENTAL CANAL Z VERTICAL}
+\begin{longtblr}{
+		colspec = {ll},
+		vlines  = 0pt,
+		hlines  = 0pt,
+		row{1}  = {bg=white, fg=black},
+		cells = {font=\ttfamily}
+	}
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	* NETWORK (KNETWK)  & : ED \\
+	* STATION (KSTNM)   & : \directlua{tex.print(f.variables.disponibilidad.sotano.code)} \\
+	* LOCATION (KHOLE)  & : \directlua{tex.print(f.variables.disponibilidad.sotano.location)} \\
+	* CHANNEL (KCMPNM)  & : HNZ \\
+	* CREATED           & : --- \\
+	* START             & : --- \\
+	* END               & : 2599-12-31T23:59:59 \\
+	* DESCRIPTION       & : \directlua{tex.print(f.variables.caratula.edificio)} \directlua{tex.print(f.variables.descripcion.sotano.ubicacion)} \\
+	* LATITUDE          & : \directlua{tex.print(f.variables.sistema.sotano.latitud)} \\
+	* LONGITUDE         & : \directlua{tex.print(f.variables.sistema.sotano.longitud)} \\
+	* ELEVATION         & : \directlua{tex.print(f.variables.sistema.sotano.altitud)} \\
+	* DEPTH             & : 0.0 \\
+	* SAMPLE RATE       & : 100.0 \\
+	* INPUT UNIT        & : M \\
+	* OUTPUT UNIT       & : COUNTS \\
+	* INSTTYPE          & : DC to 430 Hz, 20V differential full scale \\
+	* INSTGAIN          & : \num{5.1e-1} (V/M/S**2) \\
+	* COMMENT           & : \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.modelo)}} \directlua{tex.print(f.variables.descripcion.sotano.serie)} \\
+	* SENSITIVITY       & : \num{2.04e5} (COUNT/M/S**2) \\
+	* A0                & : \num{1.00725e18} \\
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	\SetCell[c=2]{l} ZEROS 3 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.150000e+02+0.000000e+00 \\
+	\SetCell[c=2]{l} POLES 6 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02+3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02-3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03+2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03-2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03+4.946000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03-4.946000e+03 \\
+	\SetCell[c=2]{l} CONSTANT +2.055759e+23 \\
+\end{longtblr}
+\subsubsection{RESPUESTA INSTRUMENTAL CANAL Y NORTE SUR}
+\begin{longtblr}{
+		colspec = {ll},
+		vlines  = 0pt,
+		hlines  = 0pt,
+		row{1}  = {bg=white, fg=black},
+		cells = {font=\ttfamily}
+	}
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	* NETWORK (KNETWK)  & : ED \\
+	* STATION (KSTNM)   & : \directlua{tex.print(f.variables.disponibilidad.sotano.code)} \\
+	* LOCATION (KHOLE)  & : \directlua{tex.print(f.variables.disponibilidad.sotano.location)} \\
+	* CHANNEL (KCMPNM)  & : HNN \\
+	* CREATED           & : --- \\
+	* START             & : --- \\
+	* END               & : 2599-12-31T23:59:59 \\
+	* DESCRIPTION       & : \directlua{tex.print(f.variables.caratula.edificio)} \directlua{tex.print(f.variables.descripcion.sotano.ubicacion)} \\
+	* LATITUDE          & : \directlua{tex.print(f.variables.sistema.sotano.latitud)} \\
+	* LONGITUDE         & : \directlua{tex.print(f.variables.sistema.sotano.longitud)} \\
+	* ELEVATION         & : \directlua{tex.print(f.variables.sistema.sotano.altitud)} \\
+	* DEPTH             & : 0.0 \\
+	* SAMPLE RATE       & : 100.0 \\
+	* INPUT UNIT        & : M \\
+	* OUTPUT UNIT       & : COUNTS \\
+	* INSTTYPE          & : DC to 430 Hz, 20V differential full scale \\
+	* INSTGAIN          & : \num{5.1e-1} (V/M/S**2) \\
+	* COMMENT           & : \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.modelo)}} \directlua{tex.print(f.variables.descripcion.sotano.serie)} \\
+	* SENSITIVITY       & : \num{2.04e5} (COUNT/M/S**2) \\
+	* A0                & : \num{1.00725e18} \\
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	\SetCell[c=2]{l} ZEROS 3 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.150000e+02+0.000000e+00 \\
+	\SetCell[c=2]{l} POLES 6 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02+3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02-3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03+2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03-2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03+4.946000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03-4.946000e+03 \\
+	\SetCell[c=2]{l} CONSTANT +2.055759e+23 \\
+\end{longtblr}
+\subsubsection{RESPUESTA INSTRUMENTAL CANAL X ESTE OESTE}
+\begin{longtblr}{
+		colspec = {ll},
+		vlines  = 0pt,
+		hlines  = 0pt,
+		row{1}  = {bg=white, fg=black},
+		cells = {font=\ttfamily}
+	}
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	* NETWORK (KNETWK)  & : ED \\
+	* STATION (KSTNM)   & : \directlua{tex.print(f.variables.disponibilidad.sotano.code)} \\
+	* LOCATION (KHOLE)  & : \directlua{tex.print(f.variables.disponibilidad.sotano.location)} \\
+	* CHANNEL (KCMPNM)  & : HNE \\
+	* CREATED           & : --- \\
+	* START             & : --- \\
+	* END               & : 2599-12-31T23:59:59 \\
+	* DESCRIPTION       & : \directlua{tex.print(f.variables.caratula.edificio)} \directlua{tex.print(f.variables.descripcion.sotano.ubicacion)} \\
+	* LATITUDE          & : \directlua{tex.print(f.variables.sistema.sotano.latitud)} \\
+	* LONGITUDE         & : \directlua{tex.print(f.variables.sistema.sotano.longitud)} \\
+	* ELEVATION         & : \directlua{tex.print(f.variables.sistema.sotano.altitud)} \\
+	* DEPTH             & : 0.0 \\
+	* SAMPLE RATE       & : 100.0 \\
+	* INPUT UNIT        & : M \\
+	* OUTPUT UNIT       & : COUNTS \\
+	* INSTTYPE          & : DC to 430 Hz, 20V differential full scale \\
+	* INSTGAIN          & : \num{5.1e-1} (V/M/S**2) \\
+	* COMMENT           & : \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.modelo)}} \directlua{tex.print(f.variables.descripcion.sotano.serie)} \\
+	* SENSITIVITY       & : \num{2.04e5} (COUNT/M/S**2) \\
+	* A0                & : \num{1.00725e18} \\
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	\SetCell[c=2]{l} ZEROS 3 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.150000e+02+0.000000e+00 \\
+	\SetCell[c=2]{l} POLES 6 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02+3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02-3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03+2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03-2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03+4.946000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03-4.946000e+03 \\
+	\SetCell[c=2]{l} CONSTANT +2.055759e+23 \\
+\end{longtblr}
+
+
+\subsection{ESTACIÓN ACELEROMÉTRICA \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}}}
+\subsubsection{RESPUESTA INSTRUMENTAL CANAL Z VERTICAL}
+\begin{longtblr}{
+		colspec = {ll},
+		vlines  = 0pt,
+		hlines  = 0pt,
+		row{1}  = {bg=white, fg=black},
+		cells = {font=\ttfamily}
+	}
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	* NETWORK (KNETWK)  & : ED \\
+	* STATION (KSTNM)   & : \directlua{tex.print(f.variables.disponibilidad.azotea.code)} \\
+	* LOCATION (KHOLE)  & : \directlua{tex.print(f.variables.disponibilidad.azotea.location)} \\
+	* CHANNEL (KCMPNM)  & : HNZ \\
+	* CREATED           & : --- \\
+	* START             & : --- \\
+	* END               & : 2599-12-31T23:59:59 \\
+	* DESCRIPTION       & : \directlua{tex.print(f.variables.caratula.edificio)} \directlua{tex.print(f.variables.descripcion.azotea.ubicacion)} \\
+	* LATITUDE          & : \directlua{tex.print(f.variables.sistema.azotea.latitud)} \\
+	* LONGITUDE         & : \directlua{tex.print(f.variables.sistema.azotea.longitud)} \\
+	* ELEVATION         & : \directlua{tex.print(f.variables.sistema.azotea.altitud)} \\
+	* DEPTH             & : 0.0 \\
+	* SAMPLE RATE       & : 100.0 \\
+	* INPUT UNIT        & : M \\
+	* OUTPUT UNIT       & : COUNTS \\
+	* INSTTYPE          & : DC to 430 Hz, 20V differential full scale \\
+	* INSTGAIN          & : \num{5.1e-1} (V/M/S**2) \\
+	* COMMENT           & : \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.modelo)}} \directlua{tex.print(f.variables.descripcion.azotea.serie)} \\
+	* SENSITIVITY       & : \num{2.04e5} (COUNT/M/S**2) \\
+	* A0                & : \num{1.00725e18} \\
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	\SetCell[c=2]{l} ZEROS 3 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.150000e+02+0.000000e+00 \\
+	\SetCell[c=2]{l} POLES 6 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02+3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02-3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03+2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03-2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03+4.946000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03-4.946000e+03 \\
+	\SetCell[c=2]{l} CONSTANT +2.055759e+23 \\
+\end{longtblr}
+\subsubsection{RESPUESTA INSTRUMENTAL CANAL Y NORTE SUR}
+\begin{longtblr}{
+		colspec = {ll},
+		vlines  = 0pt,
+		hlines  = 0pt,
+		row{1}  = {bg=white, fg=black},
+		cells = {font=\ttfamily}
+	}
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	* NETWORK (KNETWK)  & : ED \\
+	* STATION (KSTNM)   & : \directlua{tex.print(f.variables.disponibilidad.azotea.code)} \\
+	* LOCATION (KHOLE)  & : \directlua{tex.print(f.variables.disponibilidad.azotea.location)} \\
+	* CHANNEL (KCMPNM)  & : HNN \\
+	* CREATED           & : --- \\
+	* START             & : --- \\
+	* END               & : 2599-12-31T23:59:59 \\
+	* DESCRIPTION       & : \directlua{tex.print(f.variables.caratula.edificio)} \directlua{tex.print(f.variables.descripcion.azotea.ubicacion)} \\
+	* LATITUDE          & : \directlua{tex.print(f.variables.sistema.azotea.latitud)} \\
+	* LONGITUDE         & : \directlua{tex.print(f.variables.sistema.azotea.longitud)} \\
+	* ELEVATION         & : \directlua{tex.print(f.variables.sistema.azotea.altitud)} \\
+	* DEPTH             & : 0.0 \\
+	* SAMPLE RATE       & : 100.0 \\
+	* INPUT UNIT        & : M \\
+	* OUTPUT UNIT       & : COUNTS \\
+	* INSTTYPE          & : DC to 430 Hz, 20V differential full scale \\
+	* INSTGAIN          & : \num{5.1e-1} (V/M/S**2) \\
+	* COMMENT           & : \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.modelo)}} \directlua{tex.print(f.variables.descripcion.azotea.serie)} \\
+	* SENSITIVITY       & : \num{2.04e5} (COUNT/M/S**2) \\
+	* A0                & : \num{1.00725e18} \\
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	\SetCell[c=2]{l} ZEROS 3 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.150000e+02+0.000000e+00 \\
+	\SetCell[c=2]{l} POLES 6 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02+3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02-3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03+2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03-2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03+4.946000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03-4.946000e+03 \\
+	\SetCell[c=2]{l} CONSTANT +2.055759e+23 \\
+\end{longtblr}
+\subsubsection{RESPUESTA INSTRUMENTAL CANAL X ESTE OESTE}
+\begin{longtblr}{
+		colspec = {ll},
+		vlines  = 0pt,
+		hlines  = 0pt,
+		row{1}  = {bg=white, fg=black},
+		cells = {font=\ttfamily}
+	}
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	* NETWORK (KNETWK)  & : ED \\
+	* STATION (KSTNM)   & : \directlua{tex.print(f.variables.disponibilidad.azotea.code)} \\
+	* LOCATION (KHOLE)  & : \directlua{tex.print(f.variables.disponibilidad.azotea.location)} \\
+	* CHANNEL (KCMPNM)  & : HNE \\
+	* CREATED           & : --- \\
+	* START             & : --- \\
+	* END               & : 2599-12-31T23:59:59 \\
+	* DESCRIPTION       & : \directlua{tex.print(f.variables.caratula.edificio)} \directlua{tex.print(f.variables.descripcion.azotea.ubicacion)} \\
+	* LATITUDE          & : \directlua{tex.print(f.variables.sistema.azotea.latitud)} \\
+	* LONGITUDE         & : \directlua{tex.print(f.variables.sistema.azotea.longitud)} \\
+	* ELEVATION         & : \directlua{tex.print(f.variables.sistema.azotea.altitud)} \\
+	* DEPTH             & : 0.0 \\
+	* SAMPLE RATE       & : 100.0 \\
+	* INPUT UNIT        & : M \\
+	* OUTPUT UNIT       & : COUNTS \\
+	* INSTTYPE          & : DC to 430 Hz, 20V differential full scale \\
+	* INSTGAIN          & : \num{5.1e-1} (V/M/S**2) \\
+	* COMMENT           & : \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.modelo)}} \directlua{tex.print(f.variables.descripcion.azotea.serie)} \\
+	* SENSITIVITY       & : \num{2.04e5} (COUNT/M/S**2) \\
+	* A0                & : \num{1.00725e18} \\
+	\SetCell[c=2]{l} * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
+	\SetCell[c=2]{l} ZEROS 3 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}+0.000000e+00 +0.000000e+00 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.150000e+02+0.000000e+00 \\
+	\SetCell[c=2]{l} POLES 6 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02+3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-9.770000e+02-3.280000e+02 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03+2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-1.486000e+03-2.512000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03+4.946000e+03 \\
+	\SetCell[c=2]{l} \hspace{1cm}-5.736000e+03-4.946000e+03 \\
+	\SetCell[c=2]{l} CONSTANT +2.055759e+23 \\
+\end{longtblr}

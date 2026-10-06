@@ -100,7 +100,7 @@ f.variables = {
             ext_tam = "GB",
             archivos = 18446,
             carpetas = 271,
-            dispone = ""
+            dispone = 100
         },
         azotea = {
             station = "ED",
@@ -116,7 +116,7 @@ f.variables = {
             ext_tam = "GB",
             archivos = 26004,
             carpetas = 377,
-            dispone = ""
+            dispone = 100
         }
     },
     suministro = {
@@ -172,83 +172,83 @@ f.variables = {
         }
     },
     sensor = {
-        onda = {"Cuadrada"},
+        onda = {"Senoidal"},
         sotano = {
             offset = {
                 antes = {
                     chz = {
-                        max = 9192,
-                        min = 8794,
-                        ext = "cts"
+                        max = -4.649,
+                        min = -4.989,
+                        ext = "mg"
                     },
                     chn = {
-                        max = -35905,
-                        min = -36215,
-                        ext = "cts"
+                        max = 10.55,
+                        min = 10.45,
+                        ext = "mg"
                     },
                     che = {
-                        max = -47914,
-                        min = -48266,
-                        ext = "cts"
+                        max = 1.065,
+                        min = 0.916,
+                        ext = "mg"
                     }
                 },
                 despues = {
                     chz = {
-                        max = 136,
-                        min = -114,
-                        ext = "cts"
+                        max = 73.00,
+                        min = -74.00,
+                        ext = "ug"
                     },
                     chn = {
-                        max = 66,
-                        min = -164,
-                        ext = "cts"
+                        max = 35.50,
+                        min = -35.50,
+                        ext = "ug"
                     },
                     che = {
-                        max = 126,
-                        min = -205,
-                        ext = "cts"
+                        max = 43.50,
+                        min = -42.50,
+                        ext = "ug"
                     }
                 }
             },
             eficaz = {
+                extension = "ug",
                 antes = {
-                    chz = 398,
-                    chn = 310,
-                    che = 352
+                    chz = 63.83,
+                    chn = 14.90,
+                    che = 15.97
                 },
                 despues = {
-                    chz = 250,
-                    chn = 230,
-                    che = 331
-                },
-                extension = "cts"
+                    chz = 21.40,
+                    chn = 8.762,
+                    che = 10.71
+                }
             },
             calibracion = {
                 vertical = {
                     cuentas = {
-                        max = 1702758.71,
-                        min = 10884.52
+                        max = 833183,
+                        min = -847649
                     },
                     aceleracion = {
-                        amp = 391.532
+                        amp = 411.996
                     }
                 },
                 norte = {
                     cuentas = {
-                        max = 1644242.95,
-                        min = -30294.02
+                        max = 856550,
+                        min = -871331
                     },
                     aceleracion = {
-                        amp = 391.494
+                        amp = 423.525
                     }
                 },
                 este = {
                     cuentas = {
-                        max = 1629448.97,
-                        min = -49304.64
+                        max = 850245,
+                        min = -864902
                     },
                     aceleracion = {
-                        amp = 392.480
+                        amp = 420.403
                     }
                 }
             }
@@ -257,78 +257,78 @@ f.variables = {
             offset = {
                 antes = {
                     chz = {
-                        max = -53624,
-                        min = -55228,
-                        ext = "cts"
+                        max = -2.125,
+                        min = -5.008,
+                        ext = "mg"
                     },
                     chn = {
-                        max = -26926,
-                        min = -28122,
-                        ext = "cts"
+                        max = 15.48,
+                        min = 14.72,
+                        ext = "mg"
                     },
                     che = {
-                        max = -10530,
-                        min = -11734,
-                        ext = "cts"
+                        max = 10.02,
+                        min = 9.045,
+                        ext = "mg"
                     }
                 },
                 despues = {
                     chz = {
-                        max = 636,
-                        min = -850,
-                        ext = "cts"
+                        max = 1.495,
+                        min = -1.279,
+                        ext = "mg"
                     },
                     chn = {
-                        max = 560,
-                        min = -548,
-                        ext = "cts"
+                        max = 390.5,
+                        min = -364.5,
+                        ext = "ug"
                     },
                     che = {
-                        max = 571,
-                        min = -533,
-                        ext = "cts"
+                        max = 428.5,
+                        min = -491.5,
+                        ext = "ug"
                     }
                 }
             },
             eficaz = {
+                extension = "ug",
                 antes = {
-                    chz = 1604,
-                    chn = 1196,
-                    che = 1204
+                    chz = 425.0,
+                    chn = 112.3,
+                    che = 134.1
                 },
                 despues = {
-                    chz = 1486,
-                    chn = 1108,
-                    che = 1104
-                },
-                extension = "cts"
+                    chz = 432.1,
+                    chn = 113.0,
+                    che = 137.3
+                }
             },
             calibracion = {
                 vertical = {
                     cuentas = {
-                        max = 1761699,
-                        min = -129931
+                        max = 894092,
+                        min = -865644
                     },
                     aceleracion = {
-                        amp = 783.6
+                        amp = 431.313
                     }
                 },
                 norte = {
                     cuentas = {
-                        max = 1790579,
-                        min = -103794
+                        max = 845528,
+                        min = -818320
                     },
                     aceleracion = {
-                        amp = 776.66
+                        amp = 407.847
                     }
                 },
                 este = {
                     cuentas = {
-                        max = 1809949,
-                        min = -85673
+                        max = 882810,
+                        min = -854498
                     },
                     aceleracion = {
-                        amp = 791.98
+                        amp = 425.825
                     }
                 }
             }
