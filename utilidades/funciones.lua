@@ -48,6 +48,11 @@ local marcas = {
         web = "https://www.victronenergy.com/",
         mode_dice = "Blue Solar PWM - Light",
         capa_dice = "20A@24V"
+    },
+    ritar = {
+        name = "RITAR",
+        web = "https://www.ritarpower.com/",
+        mode = "RT12120 (12VDC/12Ah)"
     }
 }
 
@@ -59,59 +64,59 @@ local fecha_mantto = {
 
 f.variables = {
     caratula = {
-        edificio = "Art 28",
-        nro_informe = 51
+        edificio = "Torre del Parque I",
+        nro_informe = 52
     },
     fecha = fecha_mantto,
     descripcion = {
-        estaciones = "so",
+        estaciones = "soaz",
         sotano = {
             ubicacion = "Sótano",
-            marca = marcas.sara.name,
-            modelo = marcas.sara.equi,
+            marca = marcas.nano.name,
+            modelo = marcas.nano.equi,
             tecnologia = tecnologias.FBA,
-            serie = 6876
+            serie = 1068
         },
         azotea = {
             ubicacion = "Azotea",
-            marca = marcas.sara.name,
-            modelo = marcas.sara.equi,
+            marca = marcas.nano.name,
+            modelo = marcas.nano.equi,
             tecnologia = tecnologias.FBA,
-            serie = 7196
+            serie = 2296
         }
     },
     disponibilidad = {
         sotano = {
-            station = "ED",
-            code = "MF38N",
-            location = "00",
+            station = "PE",
+            code = "SI30N",
+            location = "01",
             inicio = { -- inicio de los datos
-                dia = 25,
-                mes = 04,
-                ano = 2025
-            },
-            final = fecha_mantto,
-            tamano = 15.0,
-            ext_tam = "GB",
-            archivos = 37071,
-            carpetas = 0,
-            dispone = 100
-        },
-        azotea = {
-            station = "ED",
-            code = "ELA2",
-            location = "00",
-            inicio = {
-                dia = 24,
-                mes = 08,
+                dia = 08,
+                mes = 01,
                 ano = 2026
             },
             final = fecha_mantto,
-            tamano = 1.1,
-            ext_tam = "MB",
-            archivos = 27,
-            carpetas = 0,
-            dispone = 93
+            tamano = 8.5,
+            ext_tam = "GB",
+            archivos = 18446,
+            carpetas = 271,
+            dispone = ""
+        },
+        azotea = {
+            station = "ED",
+            code = "SI71N",
+            location = "",
+            inicio = {
+                dia = 25,
+                mes = 09,
+                ano = 2025
+            },
+            final = fecha_mantto,
+            tamano = 19.3,
+            ext_tam = "GB",
+            archivos = 26004,
+            carpetas = 377,
+            dispone = ""
         }
     },
     suministro = {
@@ -120,43 +125,49 @@ f.variables = {
                 marca = marcas.mean.name,
                 modelo = marcas.mean.mode_dice,
                 capacidad = marcas.mean.capa_dice,
-                vin = 220.9,
-                vout = 13.4,
-                areg = 0.1
+                vin = 226.3,
+                vout = 13.03,
+                areg = 0.47
             },
             controlador = {
                 marca = marcas.morning.name,
                 modelo = marcas.morning.mode_dice,
                 capacidad = marcas.morning.capa_dice,
-                vin = 13.4,
-                vbat = 13.4,
-                vcar = 13.4
+                vin = 13.02,
+                vbat = 13.01,
+                vcar = 13.01
             },
             bateria = {
-                marca = "RITAR",
-                modelo = "RT12120(12VDC/12Ah)",
-                arreglo = "paralelo",
-                capacidad = "12V/24Ah",
-                vini = 13.3, -- 13 05
-                tdes = 20,
-                vfin = 12.6 -- 13 25
+                marca = marcas.ritar.name,
+                modelo = marcas.ritar.mode,
+                arreglo = "",
+                capacidad = "",
+                vini = 12.91, -- 13 49
+                tdes = 37,
+                vfin = 12.4 -- 14 26
             }
         },
         azotea = {
             fuente = {
-                vin = 220.4,
+                marca = marcas.mean.name,
+                modelo = marcas.mean.mode_dice,
+                capacidad = marcas.mean.capa_dice,
+                vin = 230.6,
                 vout = 13.57,
                 areg = 0.07
             },
             controlador = {
-                vin = 13.56,
-                vbat = 13.56,
-                vcar = 13.55
+                marca = marcas.morning.name,
+                modelo = marcas.morning.mode_dice,
+                capacidad = marcas.morning.capa_dice,
+                vin = 13.57,
+                vbat = 13.57,
+                vcar = 13.56
             },
             bateria = {
-                vini = 13.44, --15 01
-                tdes = 36,
-                vfin = 12.86 -- 15 37
+                vini = 13.51, --14 54
+                tdes = 41,
+                vfin = 12.82 -- 15 35
             }
         }
     },
@@ -327,46 +338,46 @@ f.variables = {
         sotano = {
             interna = {
                 memoria = memorias.uno,
-                libre = 15508.41,
-                total = 15566.01,
-                extension = "MB"
+                libre = 5.6,
+                total = 5.6,
+                extension = "GB"
             },
             externa = {
-                memoria = memorias.dos,
-                libre = 43847.51,
-                total = 60045.52,
-                extension = "MB"
+                memoria = memorias.tres,
+                libre = 20.272,
+                total = 28.961,
+                extension = "GB"
             }
         },
         azotea = {
             interna = {
                 memoria = memorias.uno,
-                libre = 7766.59,
-                total = 7786.64,
-                extension = "MB"
+                libre = 7.4,
+                total = 7.4,
+                extension = "GB"
             },
             externa = {
-                memoria = memorias.dos,
-                libre = 0,
-                total = 0,
-                extension = "MB"
+                memoria = memorias.tres,
+                libre = 8.9,
+                total = 29.0,
+                extension = "GB"
             }
         }
     },
     sistema = {
         sotano = {
-            incertidumbre = "-",
+            incertidumbre = "0.10",
             satelites = 5,
-            latitud = 12.127997,
-            longitud = 77.025672,
-            altitud = 147.0
+            latitud = 12.092738,
+            longitud = 77.024999,
+            altitud = 184
         },
         azotea = {
-            incertidumbre = "NA",
-            satelites = 14,
-            latitud = 12.081928,
-            longitud = 77.025810,
-            altitud = 241.2
+            incertidumbre = "0.10",
+            satelites = 11,
+            latitud = 12.093220,
+            longitud = 77.025009,
+            altitud = 225
         }
     }
 }

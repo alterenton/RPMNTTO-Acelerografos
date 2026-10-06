@@ -19,11 +19,39 @@
 
     \section{DESCRIPCIÓN DE LOS INSTRUMENTOS}
     \begin{luacode*}
-        if f.variables.descripcion.estaciones == "so" then
+        local lasestaciones = f.variables.descripcion.estaciones
+        if lasestaciones == "so" then
             tex.print("\\input{secciones/descripcion/so}")
-        elseif f.variables.descripcion.estaciones == "soaz" then
+        elseif lasestaciones == "soaz" then
             tex.print("\\input{secciones/descripcion/soaz}")
         end
     \end{luacode*}
+
+    \section{DISPONIBILIDAD DE LOS DATOS}
+    1
+
+    \section{ESTADO DEL SISTEMA DE SUMINISTRO ELÉCTRICO}
+    1
+
+    \section{ESTADO DEL SENSOR INTERNO}
+    1
+
+    \section{ESTADO DE LOS DISPOSITIVOS DE ALMACENAMIENTO}
+    1
+
+    \section{ESTADO DEL SISTEMA DE TIEMPO}
+    1
+
+    \section{IMÁGENES DE REFERENCIA}
+    \subsection{DATOS DISPONIBLES}
+    Muchas
+
+    \section{FORMATO DE POLOS Y CEROS}
+    \label{sec:formato}
+    1
+
+    \section{FORMAS DE ONDA}
+    \label{sec:formas}
+    1
 
 \end{document}

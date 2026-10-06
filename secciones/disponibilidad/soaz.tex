@@ -1,0 +1,15 @@
+\begin{longtblr}{
+    colspec = {
+        X[1.25,c]
+        *{3}{X[1,c]}
+        *{3}{X[1,c]}
+    },
+    row{2,Y} = {bg=SuCielo},
+    row{3-5} = {font=\small},
+    row{3} = {bg=gray!10},
+    row{6} = {bg=gray!25}
+}
+    \SetCell[r=1,c=7]{l} DATOS GEOFÍSICOS \\
+    \SetCell[r=1,c=7]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    CÓDIGO & SAMPLING & FORMATO & REGISTRO & FECHA MANTTO & INICIO DATA & FINAL DATA \\
+\end{longtblr}
