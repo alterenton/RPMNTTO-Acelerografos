@@ -1,0 +1,26 @@
+\begin{longtblr}{
+		colspec = {*{4}{X[c]}},
+		row{2,7} = {bg=SuCielo},
+		row{Y} = {bg=gray!25},
+		row{3,5,8,10} = {bg=gray!10, valign=m}
+	}
+	\SetCell[c=4]{l} ESTADO DEL SISTEMA DE TIEMPO GNSS \\
+	% sotano
+	\SetCell[c=4]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+	ESTADO & ENGANCHE SATELITAL & INCERTIDUMBRE & MODO DE ENCENDIDO \\
+	Operativo &
+	\directlua{tex.print(f.variables.sistema.sotano.satelites)} GNSS &
+	\directlua{tex.print(f.variables.sistema.sotano.incertidumbre)} \unit{\micro\second} &
+	Duty Cycled \\
+	TIPO DE COORDENADAS & LATITUD & LONGITUD & ALTITUD \\
+	Geográficas &
+	\directlua{tex.print(f.variables.sistema.sotano.latitud)} \unit{S} &
+	\directlua{tex.print(f.variables.sistema.sotano.longitud)} \unit{W} &
+	\directlua{tex.print(f.variables.sistema.sotano.altitud)} \unit{msnm} \\
+	% ---------
+	\SetCell[c=4]{l} OBSERVACIONES \\
+	\SetCell[c=4]{l, 17.5cm} \begin{itemize}
+		\item Las antenas GNSS están recibiendo correctamente las señales satelitales, sincronizando correctamente al acelerógrafo, los parámetros de tiempo UTC y ubicación.
+		\item Los empalmes de los conectores TNC (hacia la antena) y BNC (hacia el acelerógrafo) se encuentran en buen estado.
+	\end{itemize}
+\end{longtblr}

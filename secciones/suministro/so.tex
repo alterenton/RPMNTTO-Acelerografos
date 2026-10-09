@@ -1,0 +1,69 @@
+\begin{longtblr}{
+		colspec = {X[1.5,l] *{3}{X[1.75,c]}},
+		row{9,16,23} = {valign=m},
+		row{2} = {bg=SuCielo},
+		row{3,10,17} = {bg=gray!25},
+		cell{4-9,11-16,18-23}{1} = {bg=gray!10},
+		cell{7,14,21}{2-4} = {bg=gray!10}
+	}
+	\SetCell[r=1,c=4]{l} SISTEMA DE SUMINISTRO ELÉCTRICO \\
+	% SOTANO
+	\SetCell[r=1,c=4]{l} ESTACIÓN \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+	% fuente
+	\SetCell[r=1,c=4]{l} FUENTE CONMUTADA O SWITCHING \\
+	MARCA &
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.sotano.fuente.marca)} \\
+	MODELO &
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.sotano.fuente.modelo)} \\
+	CAPACIDAD &
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.sotano.fuente.capacidad)} \\
+	\SetCell[r=2,c=1]{l} MEDICIONES & VOLTAJE DE ENTRADA & VOLTAJE DE SALIDA & AJUSTE DE REGULACIÓN \\
+	&
+	\directlua{tex.print(f.variables.suministro.sotano.fuente.vin)} \unit{\volt} &
+	\directlua{tex.print(f.variables.suministro.sotano.fuente.vout)} \unit{\volt} &
+	\directlua{tex.print(f.variables.suministro.sotano.fuente.areg)} \unit{\volt} \\
+	OBSERVACIONES &
+	\SetCell[r=1,c=3]{l, 13cm} \begin{itemize}
+		\item La fuente conmutada presenta un funcionamiento estable y acorde con las condiciones normales de operación. Durante la inspección no se identificaron indicios de sobrecalentamiento, sobretensión o sobrecorriente, manteniéndose los parámetros eléctricos evaluados dentro de los valores esperados.
+	\end{itemize}\\
+	% <<<<<<<<<<
+	% controlador
+	\SetCell[r=1,c=4]{l} CONTROLADOR DE CARGA \\
+	MARCA &
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.sotano.controlador.marca)} \\
+	MODELO &
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.sotano.controlador.modelo)} \\
+	CAPACIDAD &
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.sotano.controlador.capacidad)} \\
+	\SetCell[r=2,c=1]{l} MEDICIONES & VOLTAJE DE ENTRADA & VOLTAJE A LA BATERÍA & VOLTAJE EN LA CARGA \\
+	&
+	\directlua{tex.print(f.variables.suministro.sotano.controlador.vin)} \unit{\volt} &
+	\directlua{tex.print(f.variables.suministro.sotano.controlador.vbat)} \unit{\volt} &
+	\directlua{tex.print(f.variables.suministro.sotano.controlador.vcar)} \unit{\volt} \\
+	OBSERVACIONES &
+	\SetCell[r=1,c=3]{l, 13cm} \begin{itemize}
+		% \item El controlador de carga se encuentra operativo y cumple adecuadamente su función de regulación y gestión de la alimentación del sistema. Su funcionamiento permite mantener una fuente de energía de respaldo disponible, contribuyendo a la continuidad operativa del equipo ante eventuales interrupciones de la alimentación principal.
+        \item El controlador de carga es un circuito interno de la fuente conmutada, cumple adecuadamente su función de regulación y gestión de la alimentación al sistema. Este permite mantener una fuente de energía de respaldo disponible, contribuyendo a la continuidad operativa del equipo ante eventuales interrupciones del suministro comercial.
+	\end{itemize}\\
+	% <<<<<<<<<<<<<
+	% bateria
+	\SetCell[r=1,c=4]{l} BATERÍA DE ENERGÍA \\
+	MARCA &
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.sotano.bateria.marca)} \\
+	MODELO &
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.sotano.bateria.modelo)} \\
+	CAPACIDAD &
+	\SetCell[r=1,c=3]{l, 13cm} Banco de \directlua{tex.print(f.variables.suministro.sotano.bateria.nro_bat)} baterías conectadas en \directlua{tex.print(f.variables.suministro.sotano.bateria.arreglo)} con una capacidad total de \directlua{tex.print(f.variables.suministro.sotano.bateria.capa_tota)} \\
+	\SetCell[r=2,c=1]{l} MEDICIONES & VOLTAJE INICIAL DE DESCARGA & TIEMPO DE DESCARGA & VOLTAJE FINAL DE DESCARGA \\
+	&
+	\directlua{tex.print(f.variables.suministro.sotano.bateria.vini)} \unit{\volt} &
+	\directlua{tex.print(f.variables.suministro.sotano.bateria.tdes)} \unit{\minute} &
+	\directlua{tex.print(f.variables.suministro.sotano.bateria.vfin)} \unit{\volt} \\
+	OBSERVACIONES &
+	\SetCell[r=1,c=3]{l, 13cm} \begin{itemize}
+		\item Las baterías se encuentran en condiciones adecuadas para el servicio, manteniendo disponibilidad para suplir energía de respaldo al sistema ante una eventual interrupción del suministro comercial. Durante la inspección no se identificaron anomalías que comprometan su funcionamiento.
+		% \item Debido a la antiguedad de la batería, se recomienda su reemplazo para garantizar la continuidad del suministro eléctrico y evitar posibles fallas en el sistema. La batería actual ha mostrado signos de desgaste y disminución acelerada de su capacidad, lo que podría afectar la eficiencia del sistema de respaldo.
+	\end{itemize} \\
+	% <<<<<<<<<<<<
+	% ----------
+\end{longtblr}

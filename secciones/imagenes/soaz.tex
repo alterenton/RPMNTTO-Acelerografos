@@ -1,0 +1,461 @@
+% SOTANO
+\subsection{ESTACIÓN ACELEROMÉTRICA \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}}}
+% disponen
+\subsubsection{DATOS DISPONIBLES}
+\begin{tblr}[long]{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{4} = {bg=gray!25},
+    }
+    DATOS DISPONIBLES \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    \adjincludegraphics[width=\linewidth]{graficas/sotano/disponibilidad} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item De acuerdo al escaneo de información de datos en el período descargado [\directlua{tex.print(f.variables.fecha.muestra(f.variables.disponibilidad.sotano.inicio))} al \directlua{tex.print(f.variables.fecha.muestra(f.variables.disponibilidad.sotano.final))}] disponemos del \qty{\directlua{tex.print(f.variables.disponibilidad.sotano.dispone)}}{\percent}.
+    \end{itemize}
+\end{tblr}
+% <<<<<<<<<<<<
+% fisicamente
+\subsubsection{APRECIACIÓN FÍSICA}
+\begin{tblr}{
+        colspec={XX},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+        row{4,5} = {halign=c}
+    }
+    \SetCell[c=2]{l} APRECIACIÓN FÍSICA \\
+    \SetCell[c=2]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    \SetCell[c=2]{l} EXTERIOR DEL ACELERÓGRAFO \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/acelerografo1} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/acelerografo2} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/acelerografo3} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/acelerografo4} \\
+    \SetCell[c=2]{l} OBSERVACIONES \\
+    \SetCell[c=2]{l, 17.5cm} \begin{itemize}
+        \item El acelerógrafo se encontró en buenas condiciones, con todos sus periféricos operando con normalidad: sistema de energía, receptor GNSS y tarjeta de red.
+        \item El acelerógrafo se encuentra correctamente anclado a la base de concreto y nivelado respecto al plano horizontal.
+    \end{itemize}
+\end{tblr}
+\newpage
+\begin{tblr}{
+        colspec={XX},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+        row{4,5} = {halign=c}
+    }
+    \SetCell[c=2]{l} APRECIACIÓN FÍSICA \\
+    \SetCell[c=2]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    \SetCell[c=2]{l} ELEMENTOS DE LA ESTACIÓN \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/estacion1} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/estacion2} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/estacion3} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/estacion4} \\
+    \SetCell[c=2]{l} OBSERVACIONES \\
+    \SetCell[c=2]{l, 17.5cm} \begin{itemize}
+        \item El exterior del ambiente se encuentra en buenas condiciones físicas también las obras civiles dentro del ambiente: base de concreto y canalizado conduit.
+        \item Los componentes del sistema o estación sísmica se encuentran en buen estado físico, es decir, cajas de paso, tablero de distribución y componentes internos.
+    \end{itemize}
+\end{tblr}
+% <<<<<<<<<<<<<<<<<
+% energia
+\subsubsection{COMPONENTES DE ENERGIZACIÓN}
+\begin{tblr}{
+        colspec = {XX},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+        row{4,5} = {halign=c}
+    }
+    \SetCell[c=2]{l} COMPONENTES DE ENERGIZACIÓN \\
+    \SetCell[c=2]{l} ESTACIÓN \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    \SetCell[c=2]{l} MEDICIÓN DE PARÁMETROS ELÉCTRICOS EN EL TABLERO DE DISTRIBUCIÓN \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/energizacion1} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/energizacion2} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/energizacion3} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/energizacion4} \\
+    \SetCell[c=2]{l} OBSERVACIONES \\
+    \SetCell[c=2]{l, 17.5cm} \begin{itemize}
+        \item Medición de parámetros eléctricos en el sistema de suministro eléctrico de respaldo: entrada y salida de la fuente conmutada, así mismo, la entrada y salida del controlador de carga.
+    \end{itemize}
+\end{tblr}
+\newpage
+\begin{tblr}{
+        colspec = {XX},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    }
+    \SetCell[c=2]{l} COMPONENTES DE ENERGIZACIÓN \\
+    \SetCell[c=2]{l} ESTACIÓN \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    \SetCell[c=2]{l} MEDICIÓN DE PARÁMETROS ELÉCTRICOS EN EL TABLERO DE DISTRIBUCIÓN \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/energizacion5} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm, angle=0]{fotos/sotano/energizacion6} \\
+    \SetCell[c=2]{l} OBSERVACIONES \\
+    \SetCell[c=2]{l, 17.5cm} \begin{itemize}
+        \item Prueba de descarga: se desconecta la tensión de entrada 220 VAC por un período prudente para verificar que el banco de baterías sostenga la carga con un valor superior al nominal.
+        \item Se realiza la interpretación basado en el tiempo transcurrido con la tensión registrada en el momento, así podemos identificar el estado de salud actual de las baterías.
+    \end{itemize}
+\end{tblr}
+% <<<<<<<<<<<<<<<<
+% señales
+\subsubsection{SEÑALES DEL SENSOR}
+% Nivelacion
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 1
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    NIVELACIÓN MECÁNICA EN EL HORIZONTAL \\
+    \SetCell{c} \adjincludegraphics[width=7.5cm, angle=-90]{fotos/sotano/nivelacion1} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/sotano/nivelacion2} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Se niveló la horizontal del acelerógrafo mediante el perno de anclaje y la burbuja de nivelación. Se verificó que el sensor de aceleración se encuentra en la horizontal, con una inclinación menor a 0.5 grados.
+    \end{itemize}
+\end{tblr}
+% 
+\newpage
+% Offset
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 2
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    NIVEL DE OFFSET DE CADA CANAL ANTES Y DESPUÉS DEL MANTENIMIENTO \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/sotano/offset1} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/sotano/offset2} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Superior: Offset incial
+        \item Inferior: Offset final
+        \item Se centró la masa del sensor de aceleración en los tres canales.
+    \end{itemize}
+\end{tblr}
+% 
+\newpage
+% Estimulo
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 3
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    ESTIMULACIÓN CON GOLPES CERCA DE LA BASE DE CONCRETO \\
+    \adjincludegraphics[width=\linewidth]{pantallazos/sotano/estimulo1} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Se estimuló el sensor con pequeños golpes cerca de la base de concreto, y se observó que el sensor responde correctamente a la excitación. Se valida el funcionamiento del sensor de aceleración.
+    \end{itemize}
+\end{tblr}
+% 
+\newpage
+% Cuentas
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 4
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [OUTPUT - Cuentas] \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/sotano/calibracion1} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{graficas/sotano/cuentas} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Superior: Señal de calibración inyectada vía software desde el acelerógrafo (forma de onda: \directlua{tex.print(f.variables.sensor.onda)} de Amplitud 1VDC y Frecuencia 0.25Hz)
+        \item Inferior: Señal censada y registrada por el acelerógrafo. Se valida la calibración reconstruyendo la señal registrada en términos de cuentas.
+    \end{itemize}
+\end{tblr}
+% 
+\newpage
+% Aceleracion
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 5
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [OUTPUT - \unit{\centi\meter\per\square\second}] \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/sotano/calibracion1} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{graficas/sotano/aceleracion} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Superior: Señal de calibración inyectada vía software desde el acelerógrafo (forma de onda: \directlua{tex.print(f.variables.sensor.onda)} de Amplitud 1VDC y Frecuencia 0.25Hz)
+        \item Inferior: Señal censada y registrada por el acelerógrafo. Se valida la calibración reconstruyendo la señal registrada en términos de aceleración [\unit{\centi\meter\per\square\second}]
+    \end{itemize}
+\end{tblr}
+% 
+\newpage
+% Espectrograma
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 6
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [ESPECTROGRAMA] \\
+    \adjincludegraphics[width=\linewidth]{graficas/sotano/espectrograma} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item El espectrograma es un gráfico tridimensional en 2D que muestra cómo cambian las frecuencias de la señal a lo largo del tiempo.
+        \item El eje X representa el tiempo, el eje Y la frecuencia y el nivel de color o brillo indica la energía o amplitud de esa frecuencia.
+        \item Permite identificar exactamente que frecuencia está presente, la ocurrencia e intensidad; lo que facilita la detección de componentes sismológicos.
+    \end{itemize}
+\end{tblr}
+% 
+% <<<<<<<<<<<<<<
+% final
+\subsubsection{SITUACIÓN FINAL}
+\begin{tblr}{
+    colspec={X},
+    row{2} = {bg=SuCielo},
+    row{Y} = {bg=gray!25},
+}
+    SITUACIÓN FINAL \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    \adjincludegraphics[width=\linewidth]{pantallazos/sotano/final1.png} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Vista general del equipo ubicado en el \directlua{tex.print(f.variables.descripcion.sotano.ubicacion)} al culminar el mantenimiento.
+        \item Pestaña de resumen en la interfaz gráfica de Usuario - Web GUI.
+    \end{itemize}
+\end{tblr}
+% <<<<<<<<<<<<<
+% --------------
+% AZOTEA
+\subsection{ESTACIÓN ACELEROMÉTRICA \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}}}
+% disponen
+\subsubsection{DATOS DISPONIBLES}
+\begin{tblr}[long]{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{4} = {bg=gray!25},
+    }
+    DATOS DISPONIBLES \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    \adjincludegraphics[width=\linewidth]{graficas/azotea/disponibilidad} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item De acuerdo al escaneo de información de datos en el período descargado [\directlua{tex.print(f.variables.fecha.muestra(f.variables.disponibilidad.azotea.inicio))} al \directlua{tex.print(f.variables.fecha.muestra(f.variables.disponibilidad.azotea.final))}] disponemos del \qty{\directlua{tex.print(f.variables.disponibilidad.azotea.dispone)}}{\percent}.
+    \end{itemize}
+\end{tblr}
+% <<<<<<<<<<<<
+% fisicamente
+\subsubsection{APRECIACIÓN FÍSICA}
+\begin{tblr}{
+        colspec={XX},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+        row{4,5} = {halign=c}
+    }
+    \SetCell[c=2]{l} APRECIACIÓN FÍSICA \\
+    \SetCell[c=2]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    \SetCell[c=2]{l} EXTERIOR DEL ACELERÓGRAFO \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/acelerografo1} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/acelerografo2} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/acelerografo3} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/acelerografo4} \\
+    \SetCell[c=2]{l} OBSERVACIONES \\
+    \SetCell[c=2]{l, 17.5cm} \begin{itemize}
+        \item El acelerógrafo se encontró en buenas condiciones, con todos sus periféricos operando con normalidad: sistema de energía, receptor GNSS y tarjeta de red.
+        \item El acelerógrafo se encuentra correctamente anclado a la base de concreto y nivelado respecto al plano horizontal.
+    \end{itemize}
+\end{tblr}
+\newpage
+\begin{tblr}{
+        colspec={XX},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+        row{4,5} = {halign=c}
+    }
+    \SetCell[c=2]{l} APRECIACIÓN FÍSICA \\
+    \SetCell[c=2]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    \SetCell[c=2]{l} ELEMENTOS DE LA ESTACIÓN \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/estacion1} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/estacion2} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/estacion3} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/estacion4} \\
+    \SetCell[c=2]{l} OBSERVACIONES \\
+    \SetCell[c=2]{l, 17.5cm} \begin{itemize}
+        \item El exterior del ambiente se encuentra en buenas condiciones físicas también las obras civiles dentro del ambiente: base de concreto y canalizado conduit.
+        \item Los componentes del sistema o estación sísmica se encuentran en buen estado físico, es decir, cajas de paso, tablero de distribución y componentes internos.
+    \end{itemize}
+\end{tblr}
+% <<<<<<<<<<<<<<<<<
+% energia
+\subsubsection{COMPONENTES DE ENERGIZACIÓN}
+\begin{tblr}{
+        colspec = {XX},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+        row{4,5} = {halign=c}
+    }
+    \SetCell[c=2]{l} COMPONENTES DE ENERGIZACIÓN \\
+    \SetCell[c=2]{l} ESTACIÓN \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    \SetCell[c=2]{l} MEDICIÓN DE PARÁMETROS ELÉCTRICOS EN EL TABLERO DE DISTRIBUCIÓN \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/energizacion1} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/energizacion2} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/energizacion3} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/energizacion4} \\
+    \SetCell[c=2]{l} OBSERVACIONES \\
+    \SetCell[c=2]{l, 17.5cm} \begin{itemize}
+        \item Medición de parámetros eléctricos en el sistema de suministro eléctrico de respaldo: entrada y salida de la fuente conmutada, así mismo, la entrada y salida del controlador de carga.
+    \end{itemize}
+\end{tblr}
+\newpage
+\begin{tblr}{
+        colspec = {XX},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    }
+    \SetCell[c=2]{l} COMPONENTES DE ENERGIZACIÓN \\
+    \SetCell[c=2]{l} ESTACIÓN \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    \SetCell[c=2]{l} MEDICIÓN DE PARÁMETROS ELÉCTRICOS EN EL TABLERO DE DISTRIBUCIÓN \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/energizacion5} &
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/energizacion6} \\
+    \SetCell[c=2]{l} OBSERVACIONES \\
+    \SetCell[c=2]{l, 17.5cm} \begin{itemize}
+        \item Prueba de descarga: se desconecta la tensión de entrada 220 VAC por un período prudente para verificar que el banco de baterías sostenga la carga con un valor superior al nominal.
+        \item Se realiza la interpretación basado en el tiempo transcurrido con la tensión registrada en el momento, así podemos identificar el estado de salud actual de las baterías.
+    \end{itemize}
+\end{tblr}
+% <<<<<<<<<<<<<<<<
+% señales
+\subsubsection{SEÑALES DEL SENSOR}
+% Nivelacion
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 1
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    NIVELACIÓN MECÁNICA EN EL HORIZONTAL \\
+    \SetCell{c} \adjincludegraphics[height=8cm, angle=0]{fotos/azotea/nivelacion1} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/azotea/nivelacion2} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Se niveló la horizontal del acelerógrafo mediante el perno de anclaje y la burbuja de nivelación. Se verificó que el sensor de aceleración se encuentra en la horizontal, con una inclinación menor a 0.5 grados.
+        \item Solo para aclaración en la imagen inferior se observa que el perno esta ligeramente superior para compensar la superficie horizontal, debido a que la base del podio no esta nivelada a una horizontal física, el equipo claramente detecta sus ejes con la burbuja de centrado.
+    \end{itemize}
+\end{tblr}
+% 
+\newpage
+% Offset
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 2
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    NIVEL DE OFFSET DE CADA CANAL ANTES Y DESPUÉS DEL MANTENIMIENTO \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/azotea/offset1} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/azotea/offset2} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Superior: Offset incial
+        \item Inferior: Offset final
+        \item Se centró la masa del sensor de aceleración en los tres canales.
+    \end{itemize}
+\end{tblr}
+% 
+\newpage
+% Estimulo
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 3
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    ESTIMULACIÓN CON GOLPES CERCA DE LA BASE DE CONCRETO \\
+    \adjincludegraphics[width=\linewidth]{pantallazos/azotea/estimulo1} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Se estimuló el sensor con pequeños golpes cerca de la base de concreto, y se observó que el sensor responde correctamente a la excitación. Se valida el funcionamiento del sensor de aceleración.
+    \end{itemize}
+\end{tblr}
+% 
+\newpage
+% Cuentas
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 4
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [OUTPUT - Cuentas] \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/azotea/calibracion1} \\
+            \adjincludegraphics[width=\linewidth, height=7.5cm]{graficas/azotea/cuentas} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Superior: Señal de calibración inyectada vía software desde el acelerógrafo (forma de onda: \directlua{tex.print(f.variables.sensor.onda)} de Amplitud 1VDC y Frecuencia 0.25Hz)
+        \item Inferior: Señal censada y registrada por el acelerógrafo. Se valida la calibración reconstruyendo la señal registrada en términos de cuentas.
+    \end{itemize}
+\end{tblr}
+% 
+\newpage
+% Aceleracion
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 5
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [OUTPUT - \unit{\centi\meter\per\square\second}] \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/azotea/calibracion1} \\
+            \adjincludegraphics[width=\linewidth, height=7.5cm]{graficas/azotea/aceleracion} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Superior: Señal de calibración inyectada vía software desde el acelerógrafo (forma de onda: \directlua{tex.print(f.variables.sensor.onda)} de Amplitud 1VDC y Frecuencia 0.25Hz)
+        \item Inferior: Señal censada y registrada por el acelerógrafo. Se valida la calibración reconstruyendo la señal registrada en términos de aceleración [\unit{\centi\meter\per\square\second}]
+    \end{itemize}
+\end{tblr}
+% 
+\newpage
+% Espectrograma
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 6
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [ESPECTROGRAMA] \\
+            \adjincludegraphics[width=\linewidth]{graficas/azotea/espectrograma} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item El espectrograma es un gráfico tridimensional en 2D que muestra cómo cambian las frecuencias de la señal a lo largo del tiempo.
+        \item El eje X representa el tiempo, el eje Y la frecuencia y el nivel de color o brillo indica la energía o amplitud de esa frecuencia.
+        \item Permite identificar exactamente que frecuencia está presente, la ocurrencia e intensidad; lo que facilita la detección de componentes sismológicos.
+    \end{itemize}
+\end{tblr}
+% 
+% <<<<<<<<<<<<<<
+% final
+\subsubsection{SITUACIÓN FINAL}
+\begin{tblr}{
+    colspec={X},
+    row{2} = {bg=SuCielo},
+    row{Y} = {bg=gray!25},
+}
+    SITUACIÓN FINAL \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.azotea.ubicacion)}} \\
+    \adjincludegraphics[width=\linewidth]{pantallazos/azotea/final1.png} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Vista general del equipo ubicado en el \directlua{tex.print(f.variables.descripcion.azotea.ubicacion)} al culminar el mantenimiento.
+        \item Pestaña de Status en la interfaz gráfica de Usuario - Web GUI.
+    \end{itemize}
+\end{tblr}
+% <<<<<<<<<<<<<
+% -------------

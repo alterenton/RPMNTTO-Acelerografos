@@ -52,7 +52,7 @@ HOJA_EVENTOS = "Muestra"
 # ------------------------------------------------------------
 
 CARPETA_DATOS = Path(
-    r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-054__SanFelipe890\DataAzotea\Data\DATALOG"
+    r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-055__Design\data1\data\events"
 )
 
 
@@ -60,7 +60,7 @@ CARPETA_DATOS = Path(
 # CARPETA DE SALIDA
 # ------------------------------------------------------------
 
-CARPETA_SALIDA = Path(__file__).resolve().parent.parent / "ondas" / "azotea"
+CARPETA_SALIDA = Path(__file__).resolve().parent.parent / "ondas" / "sotano"
 
 CARPETA_SALIDA.mkdir(
     parents=True,
@@ -93,9 +93,9 @@ HORAS_LOCAL_A_UTC = 5
 # ============================================================
 
 CANALES = {
-    "E": "HNE",
-    "N": "HNN",
-    "Z": "HNZ",
+    "E": "C3",
+    "N": "C2",
+    "Z": "C1",
 }
 
 
@@ -429,9 +429,9 @@ def crear_inventario(archivos):
                 canal = tr.stats.channel
 
                 if canal not in (
-                    "HNE",
-                    "HNN",
-                    "HNZ"
+                    "C3",
+                    "C2",
+                    "C1"
                 ):
                     continue
 
@@ -483,7 +483,7 @@ def crear_inventario(archivos):
     print("\n")
 
     print(
-        f"Registros HNE/HNN/HNZ: "
+        f"Registros C3/C2/C1: "
         f"{len(inventario)}"
     )
 
@@ -492,9 +492,9 @@ def crear_inventario(archivos):
     )
 
     for canal in (
-        "HNE",
-        "HNN",
-        "HNZ"
+        "C3",
+        "C2",
+        "C1"
     ):
 
         registros = [
@@ -868,9 +868,9 @@ def graficar_evento(
     )
 
     nombres = {
-        "E": "E (HNE)",
-        "N": "N (HNN)",
-        "Z": "Z (HNZ)",
+        "E": "E (C3)",
+        "N": "N (C2)",
+        "Z": "Z (C1)",
     }
 
     for ax, (
@@ -1673,7 +1673,7 @@ def main():
 
         print(
             "\n❌ No se encontraron "
-            "HNE/HNN/HNZ."
+            "C3/C2/C1."
         )
 
         return

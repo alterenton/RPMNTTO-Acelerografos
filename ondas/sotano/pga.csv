@@ -1,10 +1,83 @@
 ﻿Evento;Referencia;Magnitud;Hora;PGAE;PGAN;PGAZ
-1;24 km al NE de Calango, Cañete - Lima;4.0;01/05/2026 03:13:17;3;5;5
-2;22 km al SO de Lurín, Lima - Lima;4.3;10/07/2026 23:42:52;25;46;53
-3;2 km al SE de Ricardo Palma, Huarochirí - Lima;4.1;22/07/2026 07:25:57;7;22;18
-4;117 km al SO de Huacho, Huaura - Lima;4.0;24/07/2026 07:55:01;1;4;5
-5;46 km al S de Huacho, Huaura - Lima;4.0;24/07/2026 21:48:11;2;5;5
-6;42 km al SO de Lurín, Lima - Lima;4.8;19/08/2026 05:28:02;10;40;28
-7;183 km al O de Barranca, Barranca - Lima;4.4;21/08/2026 23:45:03;1;3;5
-8;31 km al N de Canta, Canta - Lima;4.0;31/08/2026 05:36:50;1;3;5
-9;48 km al SO de Huacho, Huaura - Lima;4.4;24/09/2026 23:26:28;3;9;10
+1;31 km al Nor-Este de Huaral, Huaral - Lima;4.0;07/07/2020 02:31:15;5;4;4
+2;70 km al Oeste de Barranca, Barranca - Lima;4.3;17/07/2020 16:30:42;3;2;2
+3;14 km al Sur-SO de San Vicente de Cañete, Cañete -Lima;4.2;14/08/2020 02:20:28;4;3;4
+4;15 km al Norte-NO de Chilca, Cañete - Lima;4.0;16/08/2020 02:42:40;4;4;4
+5;20 Km al Oeste-SO de Chosica, Lima - Lima;4.5;09/09/2020 18:17:03;3;2;1
+6;75 km al Oeste-SO de Huacho, Huaura - Lima;4.0;22/09/2020 10:26:03;3;3;2
+7;31 km al Sur-Oeste de San Vicente de Cañete, Cañete - Lima;4.0;27/09/2020 13:55:12;10;4;4
+8;49 km al SO de Puerto Supe, Barranca - Lima;4.2;02/09/2020 20:27:54;4;3;3
+9;57 km al Oeste SO de Supe Puerto, Barranca - Lima;4.0;02/09/2020 23:20:59;1;1;1
+10;70 km al Oeste de Barranca, Barranca - Lima;4.3;17/10/2020 17:17:40;4;3;3
+11;63 km al Oeste de Barrranca, Barranca - Lima;4.1;23/10/2020 22:36:22;2;2;2
+12;17 km al SE de Lima, Lima - Lima;4.0;24/10/2020 23:52:47;9;6;7
+13;63 km al Sur-Oeste de Mala, Cañete - Lima;4.6;02/11/2020 08:42:16;17;25;16
+14;17 km al Oeste de Barranca, Barranca - Lima;4.0;15/11/2020 03:28:56;1;1;1
+15;38 km al Oeste de Huacho, Huaura - Lima;4.4;26/11/2020 00:37:20;10;10;9
+16;22 km al Sur-Oeste de Chilca, Cañete - Lima;4.0;26/11/2020 16:19:32;9;8;6
+17;17 km al Norte-NO de Lima, Lima - Lima;4.1;12/12/2020 02:20:34;23;22;15
+18;9 km al Sur de Chilca, Cañete - Lima;4.2;12/12/2020 08:51:40;17;16;16
+19;67 km al Sur-Oeste de Chilca, Cañete - Lima;4.8;01/12/2020 22:27:16;39;40;33
+20;22 km al Oeste-NO de Chilca, Cañete - Lima;4.1;12/01/2021 13:48:32;16;21;19
+21;47 km al Oeste-SO de Chilca, Cañete - Lima;4.5;15/01/2021 18:51:16;47;67;59
+22;84 km al Oeste de Barranca, Barranca - Lima;4.5;16/01/2021 14:44:19;4;3;3
+23;62 km al Oeste SO de Supe Puerto, Barranca - Lima;4.8;05/02/2021 18:55:15;22;15;20
+24;67 km al Oeste-SO de Huacho, Huaura - Lima;4.4;12/02/2021 15:14:54;5;3;3
+25;37 km al Oeste-NO de Chilca, Cañete - Lima;4.0;24/02/2021 17:07:32;14;8;11
+26;30 km al Sur Este de Tamboraque, Huarochiri - Lima;4.0;25/02/2021 11:28:33;6;3;3
+27;60 km al Oeste SO de Barranca, Barranca - Lima;4.2;24/03/2021 05:39:42;5;5;6
+28;67 km al Oeste de Barranca, Barranca - Lima;4.4;07/04/2021 16:18:34;11;6;6
+29;20 km al SO de Yauyos, Yauyos - Lima.;4.3;18/04/2021 09:51:57;9;10;17
+30;41 km al Sur de Lima, Lima - Lima;4.0;21/04/2021 11:11:09;13;10;11
+31;35 km al Oeste-NO de San Vicente De Cañete, Cañete - Lima;4.0;01/05/2021 11:28:43;5;6;6
+32;12 km al Nor-Este de Ricardo Palma, Huarochirí - Lima;4.0;07/06/2021 17:00:49;14;9;14
+33;49 km al Oeste, San Vicente, Cañete - Lima;4.2;18/06/2021 06:01:20;12;8;11
+34;32 km al SO de Chilca, Cañete - Lima;4.7;23/06/2021 07:02:28;35;37;59
+35;32 km al S-SO de Chilca, Cañete - Lima;4.0;28/06/2021 07:41:19;12;14;14
+36;25 km al SO de Chilca, Cañete - Lima;4.0;02/07/2021 15:56:47;15;9;13
+37;10 km al SE de Ricardo Palma, Huarochiri - Lima;4.0;11/07/2021 16:09:55;2;3;2
+38;37 km al Oeste-SO de Mala, Cañete - Lima;4.2;17/07/2021 11:21:00;17;17;24
+39;56 km al Sur-SO de Huacho, Huaura - Lima;4.1;19/07/2021 13:08:15;8;5;6
+40;07 km al NO de Lunahuana, Cañete - Lima;4.0;24/07/2021 07:29:52;3;3;3
+41;21 km al O de Chilca, Cañete - Lima;4.3;28/07/2021 04:45:19;20;18;24
+42;24 km al SO de San Vicente De Cañete, Cañete - Lima;4.3;19/08/2021 01:14:37;2;2;1
+43;61 km al SO de Provincia Constitucional del Callao , Callao - Lima;5.0;25/08/2021 02:15:09;73;87;79
+44;21 km al SO de Chilca, Cañete - Lima;5.0;19/04/2021 23:53:29;93;113;80
+45;42 km al Oeste-SO de Mala, Cañete - Lima;6.0;22/06/2021 21:54:17;537;713;1119
+46;12 km al Norte de Yangas, Canta - Lima;4.5;27/06/2021 21:47:09;25;16;13
+47;40 km al Norte-NE de Canta, Canta - Lima;4.1;22/08/2021 23:33:41;2;2;2
+48;55 km al Oeste-SO de Huacho, Huaura - Lima;4.3;08/10/2021 16:00:05;4;3;3
+49;17 km al Oeste-SO de Chilca, Cañete-Lima;4.3;09/10/2021 03:02:50;18;15;15
+50;72 km al Sur SO de Huaral, Huaral - Lima;4.5;16/10/2021 07:53:39;33;29;28
+51;23 km al Sur-SO de Matucana, Huarochiri - Lima;4.1;26/10/2021 09:48:10;33;24;32
+52;38 km al Sur-Oeste de Chilca, Cañete - Lima;4.4;01/11/2021 12:07:57;76;64;85
+53;7 km al NO de San Vicente De Cañete, Cañete - Lima;4.0;14/11/2021 11:17:35;4;3;3
+54;25 km al E de Yangas, Canta - Lima;4.0;20/11/2021 22:59:33;4;3;3
+55;37 km al Sur-SO de San Vicente De Cañete, Cañete - Lima;4.1;03/12/2021 17:24:07;5;4;5
+56;14 km al N de Huaral, Huaral - Lima;4.1;05/12/2021 15:36:15;2;2;1
+57;32 km al Sur-SO de San Vicente De Cañete, Cañete - Lima;4.0;19/12/2021 22:10:53;2;2;2
+58;57 km al Oeste-SO de Chilca, Cañete - Lima;4.0;04/01/2022 22:32:53;12;8;7
+59;31 km al Este-NE de Canta, Canta - Lima;4.0;06/01/2022 16:24:08;4;5;4
+60;22 km al Este-NE de Lima, Lima-Lima;5.6;07/01/2022 05:27:05;300;464;455
+61;39 km al SO de Chilca, Cañete - Lima;4.3;30/01/2022 09:06:05;25;20;24
+62;25 km al E de Canta, Canta - Lima;4.0;30/01/2022 21:05:15;3;2;2
+63;84 km al O de Barranca, Barranca - Lima;4.8;02/02/2022 17:16:28;4;5;5
+64;11 km al SO de Supe Puerto, Barranca - Lima;4.3;05/02/2022 05:04:38;3;2;3
+65;24 km al Este de Supe Puerto, Barranca - Lima;4.0;02/03/2022 02:14:27;3;2;2
+66;40 km al SO de Mala, Cañete - Lima;4.0;12/03/2022 08:41:38;7;7;6
+67;31 km al O de Canta, Canta - Lima;4.0;15/03/2022 06:17:00;3;4;3
+68;90 km al Oeste-SO de Huacho, Huaura - Lima;5.2;30/03/2022 19:11:42;18;21;22
+69;70 km al O de Barranca, Barranca - Lima;4.3;25/04/2022 17:04:58;2;3;2
+70;37 km al O de Chilca, Cañete - Lima;5.5;12/05/2022 16:55:47;356;458;376
+71;28 km al O de Mala, Cañete - Lima;4.9;30/05/2022 02:04:18;50;37;34
+72;36 km al O de Barranca, Barranca - Lima;4.3;06/06/2022 11:45:01;3;2;3
+73;58 km al SO de Huacho, Huaura - Lima;4.0;16/06/2022 19:40:34;3;3;3
+74;25 km al O de San Vicente De Cañete, Cañete - Lima;4.2;02/07/2022 16:08:51;13;19;16
+75;8 km al O de Huacho, Huaura - Lima;4.0;16/07/2022 13:55:00;9;11;7
+76;14 km al N de Lunahuana, Cañete - Lima;4.8;19/07/2022 01:56:28;20;21;21
+77;31 km al O de Ancon, Lima - Lima;4.1;29/07/2022 23:20:12;17;14;13
+78;31 km al NO de Chilca, Cañete - Lima;4.3;14/08/2022 11:26:54;21;15;18
+79;37 km al SE de Tamboraque, Huarochiri - Lima;4.0;22/08/2022 03:03:14;2;1;2
+80;45 km al O de Huacho, Huaura - Lima;4.0;09/09/2022 04:17:05;1;1;1
+81;108 km al SO de Provincia Constitucional del Callao , Callao - Lima;4.0;10/09/2022 23:21:28;2;2;1
+82;42 km al N de Canta, Canta - Lima;4.1;13/09/2022 10:38:29;7;6;7

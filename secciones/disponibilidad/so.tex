@@ -1,0 +1,38 @@
+\begin{longtblr}{
+    colspec = {
+        X[1.25,c]
+        *{3}{X[1,c]}
+        *{3}{X[1,c]}
+    },
+    row{2,Y} = {bg=SuCielo},
+    row{3-5} = {font=\small},
+    row{3} = {bg=gray!10},
+    row{6} = {bg=gray!25}
+}
+    \SetCell[r=1,c=7]{l} DATOS GEOFÍSICOS \\
+    % sotano
+    \SetCell[r=1,c=7]{l} ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    CÓDIGO & SAMPLING & FORMATO & REGISTRO & FECHA MANTTO & INICIO DATA & FINAL DATA \\
+    \SetCell[r=2,c=1]{c}
+    \directlua{tex.print(f.variables.disponibilidad.codigo('sotano'))} &
+    \SetCell[r=2,c=1]{c} 100 &
+    \SetCell[r=2,c=1]{c} miniSEED &
+    \SetCell[r=2,c=1]{c} Continuo &
+    \directlua{tex.print(f.variables.fecha.muestra(f.variables.fecha))} &
+    \directlua{tex.print(f.variables.fecha.muestra(f.variables.disponibilidad.sotano.inicio))} &
+    \directlua{tex.print(f.variables.fecha.muestra(f.variables.disponibilidad.sotano.final))} \\
+    &&&&
+    \directlua{tex.print(f.variables.fecha.doy(f.variables.fecha))} &
+    \directlua{tex.print(f.variables.fecha.doy(f.variables.disponibilidad.sotano.inicio))} &
+    \directlua{tex.print(f.variables.fecha.doy(f.variables.disponibilidad.sotano.final))} \\
+    \SetCell[r=1,c=7]{l} OBSERVACIONES \\
+    \SetCell[r=1,c=7]{l, 17.5cm} \begin{itemize}
+    	\item Se descargó un total de \directlua{tex.print(f.variables.disponibilidad.sotano.tamano)} \directlua{tex.print(f.variables.disponibilidad.sotano.ext_tam)} de data sísmica en modo continuo ( \directlua{tex.print(f.variables.disponibilidad.sotano.archivos)} archivos | \directlua{tex.print(f.variables.disponibilidad.sotano.carpetas)} carpetas ) correspondientes al período de \directlua{tex.print(f.variables.fecha.dias_entre_fechas(f.variables.disponibilidad.sotano.inicio, f.variables.disponibilidad.sotano.final))} días [ \directlua{tex.print(f.variables.fecha.muestra(f.variables.disponibilidad.sotano.inicio))} al \directlua{tex.print(f.variables.fecha.muestra(f.variables.disponibilidad.sotano.final))} ].
+    	\item La información de la data registrada obtuvo una disponibilidad del \directlua{tex.print(f.variables.disponibilidad.sotano.dispone)}\%.
+    	\item Se hace entrega de la data copiada a través de un enlace para el ingreso mediante acceso remoto a la nube y su descarga correspondiente si el cliente lo requiere.
+    	\item {\bfseries\color{SuAzul} A solicitud del IGP, se deja TODO el registro de la información sísmica para que la entidad reguladora realice el procedimiento de descarga de la información y liberación de memoria.}
+    \end{itemize} \\
+    % ---------
+    \SetCell[r=1,c=7]{l} ENLACE DE DESCARGA \\
+    \SetCell[r=1,c=7]{l} \Enlace
+\end{longtblr}
