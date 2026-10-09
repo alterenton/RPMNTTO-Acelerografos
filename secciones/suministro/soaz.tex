@@ -48,11 +48,11 @@
 	% bateria
 	\SetCell[r=1,c=4]{l} BATERÍA DE ENERGÍA \\
 	MARCA &
-	\SetCell[r=1,c=3]{l} SOLITE \\
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.sotano.bateria.marca)} \\
 	MODELO &
-	\SetCell[r=1,c=3]{l} 42B19L \\
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.sotano.bateria.modelo)} \\
 	CAPACIDAD &
-	\SetCell[r=1,c=3]{l, 13cm} 12V / 38Ah (20HR) \\
+	\SetCell[r=1,c=3]{l, 13cm} Banco de 2 baterías conectadas en \directlua{tex.print(f.variables.suministro.sotano.bateria.arreglo)} con una capacidad total de \directlua{tex.print(f.variables.suministro.sotano.bateria.capa_tota)} \\
 	\SetCell[r=2,c=1]{l} MEDICIONES & VOLTAJE INICIAL DE DESCARGA & TIEMPO DE DESCARGA & VOLTAJE FINAL DE DESCARGA \\
 	&
 	\directlua{tex.print(f.variables.suministro.sotano.bateria.vini)} \unit{\volt} &
@@ -60,8 +60,8 @@
 	\directlua{tex.print(f.variables.suministro.sotano.bateria.vfin)} \unit{\volt} \\
 	OBSERVACIONES &
 	\SetCell[r=1,c=3]{l, 13cm} \begin{itemize}
-		% \item Las baterías se encuentran en condiciones adecuadas para el servicio, manteniendo disponibilidad para suministrar energía de respaldo al sistema ante una eventual interrupción de la alimentación principal. Durante la inspección no se identificaron anomalías que comprometan su funcionamiento.
-		\item Debido a la antiguedad de la batería, se recomienda su reemplazo para garantizar la continuidad del suministro eléctrico y evitar posibles fallas en el sistema. La batería actual ha mostrado signos de desgaste y disminución acelerada de su capacidad, lo que podría afectar la eficiencia del sistema de respaldo.
+		\item Las baterías se encuentran en condiciones adecuadas para el servicio, manteniendo disponibilidad para suministrar energía de respaldo al sistema ante una eventual interrupción de la alimentación principal. Durante la inspección no se identificaron anomalías que comprometan su funcionamiento.
+		% \item Debido a la antiguedad de la batería, se recomienda su reemplazo para garantizar la continuidad del suministro eléctrico y evitar posibles fallas en el sistema. La batería actual ha mostrado signos de desgaste y disminución acelerada de su capacidad, lo que podría afectar la eficiencia del sistema de respaldo.
 	\end{itemize} \\
 	% <<<<<<<<<<<<
 	% ----------
@@ -117,11 +117,11 @@
 	% bateria
 	\SetCell[r=1,c=4]{l} BATERÍA DE ENERGÍA \\
 	MARCA &
-	\SetCell[r=1,c=3]{l} RITAR \\
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.azotea.bateria.marca)} \\
 	MODELO &
-	\SetCell[r=1,c=3]{l} RT12120(12VDC/12Ah) \\
+	\SetCell[r=1,c=3]{l} \directlua{tex.print(f.variables.suministro.azotea.bateria.modelo)} \\
 	CAPACIDAD &
-	\SetCell[r=1,c=3]{l, 13cm} Banco de 2 baterías conectadas en serie con una capacidad total de \qty{24}{\volt}/\qty{12}{\ampere\hour} \\
+	\SetCell[r=1,c=3]{l, 13cm} Banco de 2 baterías conectadas en \directlua{tex.print(f.variables.suministro.azotea.bateria.arreglo)} con una capacidad total de \directlua{tex.print(f.variables.suministro.azotea.bateria.capa_tota)} \\
 	\SetCell[r=2,c=1]{l} MEDICIONES & VOLTAJE INICIAL DE DESCARGA & TIEMPO DE DESCARGA & VOLTAJE FINAL DE DESCARGA \\
 	&
 	\directlua{tex.print(f.variables.suministro.azotea.bateria.vini)} \unit{\volt} &

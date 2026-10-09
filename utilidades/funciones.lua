@@ -57,66 +57,66 @@ local marcas = {
 }
 
 local fecha_mantto = {
-    dia = 21,
-    mes = 09,
+    dia = 02,
+    mes = 10,
     ano = 2026
 }
 
 f.variables = {
     caratula = {
-        edificio = "Torre del Parque I",
-        nro_informe = 52
+        edificio = "San Felipe 890",
+        nro_informe = 54
     },
     fecha = fecha_mantto,
     descripcion = {
         estaciones = "soaz",
         sotano = {
             ubicacion = "Sótano",
-            marca = marcas.nano.name,
-            modelo = marcas.nano.equi,
+            marca = marcas.sara.name,
+            modelo = marcas.sara.equi,
             tecnologia = tecnologias.FBA,
-            serie = 1068
+            serie = 8652
         },
         azotea = {
             ubicacion = "Azotea",
-            marca = marcas.nano.name,
-            modelo = marcas.nano.equi,
+            marca = marcas.sara.name,
+            modelo = marcas.sara.equi,
             tecnologia = tecnologias.FBA,
-            serie = 2296
+            serie = 8653
         }
     },
     disponibilidad = {
         sotano = {
-            station = "PE",
-            code = "SI30N",
-            location = "01",
-            inicio = { -- inicio de los datos
-                dia = 08,
-                mes = 01,
+            station = "ED",
+            code = "JM60N",
+            location = "",
+            inicio = {
+                dia = 23,
+                mes = 04,
                 ano = 2026
             },
             final = fecha_mantto,
-            tamano = 8.5,
+            tamano = 4.7,
             ext_tam = "GB",
-            archivos = 18446,
-            carpetas = 271,
-            dispone = 100
+            archivos = 9162,
+            carpetas = 0,
+            dispone = 77.1, -- aca no puedo poner vacio o ""
         },
         azotea = {
             station = "ED",
-            code = "SI71N",
+            code = "JM61N",
             location = "",
             inicio = {
-                dia = 25,
-                mes = 09,
-                ano = 2025
+                dia = 23,
+                mes = 04,
+                ano = 2026
             },
             final = fecha_mantto,
-            tamano = 19.3,
+            tamano = 4.71,
             ext_tam = "GB",
-            archivos = 26004,
-            carpetas = 377,
-            dispone = 100
+            archivos = 8310,
+            carpetas = 0,
+            dispone = 69.8
         }
     },
     suministro = {
@@ -125,26 +125,26 @@ f.variables = {
                 marca = marcas.mean.name,
                 modelo = marcas.mean.mode_dice,
                 capacidad = marcas.mean.capa_dice,
-                vin = 226.3,
-                vout = 13.03,
-                areg = 0.47
+                vin = 227.0,
+                vout = 13.6,
+                areg = 0.1
             },
             controlador = {
                 marca = marcas.morning.name,
                 modelo = marcas.morning.mode_dice,
                 capacidad = marcas.morning.capa_dice,
-                vin = 13.02,
-                vbat = 13.01,
-                vcar = 13.01
+                vin = 13.6,
+                vbat = 13.5,
+                vcar = 13.6
             },
             bateria = {
                 marca = marcas.ritar.name,
                 modelo = marcas.ritar.mode,
-                arreglo = "",
-                capacidad = "",
-                vini = 12.91, -- 13 49
-                tdes = 37,
-                vfin = 12.4 -- 14 26
+                arreglo = "paralelo",
+                capa_tota = "24V/12Ah",
+                vini = 13.5, -- 15.52
+                tdes = 24,
+                vfin = 12.8 -- 16.16
             }
         },
         azotea = {
@@ -152,103 +152,107 @@ f.variables = {
                 marca = marcas.mean.name,
                 modelo = marcas.mean.mode_dice,
                 capacidad = marcas.mean.capa_dice,
-                vin = 230.6,
-                vout = 13.57,
-                areg = 0.07
+                vin = 229.6,
+                vout = 13.7,
+                areg = 0.2
             },
             controlador = {
                 marca = marcas.morning.name,
                 modelo = marcas.morning.mode_dice,
                 capacidad = marcas.morning.capa_dice,
-                vin = 13.57,
-                vbat = 13.57,
-                vcar = 13.56
+                vin = 13.7,
+                vbat = 13.7,
+                vcar = 13.7
             },
             bateria = {
-                vini = 13.51, --14 54
-                tdes = 41,
-                vfin = 12.82 -- 15 35
+                marca = marcas.ritar.name,
+                modelo = marcas.ritar.mode,
+                arreglo = "paralelo",
+                capa_tota = "24V/12Ah",
+                vini = 13.6, --16.42,
+                tdes = 15,
+                vfin = 13.2 -- 16.57
             }
         }
     },
     sensor = {
-        onda = {"Senoidal"},
+        onda = "Cuadrada",
         sotano = {
             offset = {
                 antes = {
                     chz = {
-                        max = -4.649,
-                        min = -4.989,
-                        ext = "mg"
+                        max = 1640876,
+                        min = 1639527,
+                        ext = "cts"
                     },
                     chn = {
-                        max = 10.55,
-                        min = 10.45,
-                        ext = "mg"
+                        max = -20829,
+                        min = -21850,
+                        ext = "cts"
                     },
                     che = {
-                        max = 1.065,
-                        min = 0.916,
-                        ext = "mg"
+                        max = -21423,
+                        min = -21874,
+                        ext = "cts"
                     }
                 },
                 despues = {
                     chz = {
-                        max = 73.00,
-                        min = -74.00,
-                        ext = "ug"
+                        max = 800,
+                        min = -661,
+                        ext = "cts"
                     },
                     chn = {
-                        max = 35.50,
-                        min = -35.50,
-                        ext = "ug"
+                        max = 550,
+                        min = -523,
+                        ext = "cts"
                     },
                     che = {
-                        max = 43.50,
-                        min = -42.50,
-                        ext = "ug"
+                        max = 199,
+                        min = -222,
+                        ext = "cts"
                     }
                 }
             },
             eficaz = {
-                extension = "ug",
+                extension = "cts",
                 antes = {
-                    chz = 63.83,
-                    chn = 14.90,
-                    che = 15.97
+                    chz = 1349,
+                    chn = 1021,
+                    che = 451
                 },
                 despues = {
-                    chz = 21.40,
-                    chn = 8.762,
-                    che = 10.71
+                    chz = 1461,
+                    chn = 1073,
+                    che = 421
                 }
             },
             calibracion = {
                 vertical = {
                     cuentas = {
-                        max = 833183,
-                        min = -847649
+                        max = 2256317.08,
+                        min = 1643761.86
                     },
                     aceleracion = {
-                        amp = 411.996
+                        amp = 146.226
                     }
                 },
                 norte = {
                     cuentas = {
-                        max = 856550,
-                        min = -871331
+                        max = 671216.09,
+                        min = -19540.73
                     },
                     aceleracion = {
-                        amp = 423.525
+                        amp = 161.494
                     }
                 },
                 este = {
                     cuentas = {
-                        max = 850245,
-                        min = -864902
+                        max = 220189.01,
+                        min = -20204.92
                     },
                     aceleracion = {
-                        amp = 420.403
+                        amp = 56.935
                     }
                 }
             }
@@ -257,78 +261,78 @@ f.variables = {
             offset = {
                 antes = {
                     chz = {
-                        max = -2.125,
-                        min = -5.008,
-                        ext = "mg"
+                        max = 1652594,
+                        min = 1651129,
+                        ext = "cts"
                     },
                     chn = {
-                        max = 15.48,
-                        min = 14.72,
-                        ext = "mg"
+                        max = 15305,
+                        min = 14187,
+                        ext = "cts"
                     },
                     che = {
-                        max = 10.02,
-                        min = 9.045,
-                        ext = "mg"
+                        max = -6831,
+                        min = -7911,
+                        ext = "cts"
                     }
                 },
                 despues = {
                     chz = {
-                        max = 1.495,
-                        min = -1.279,
-                        ext = "mg"
+                        max = 1077,
+                        min = -700,
+                        ext = "cts"
                     },
                     chn = {
-                        max = 390.5,
-                        min = -364.5,
-                        ext = "ug"
+                        max = 554,
+                        min = -524,
+                        ext = "cts"
                     },
                     che = {
-                        max = 428.5,
-                        min = -491.5,
-                        ext = "ug"
+                        max = 532,
+                        min = -553,
+                        ext = "cts"
                     }
                 }
             },
             eficaz = {
-                extension = "ug",
+                extension = "cts",
                 antes = {
-                    chz = 425.0,
-                    chn = 112.3,
-                    che = 134.1
+                    chz = 1465,
+                    chn = 1118,
+                    che = 1080
                 },
                 despues = {
-                    chz = 432.1,
-                    chn = 113.0,
-                    che = 137.3
+                    chz = 1777,
+                    chn = 1078,
+                    che = 1085
                 }
             },
             calibracion = {
                 vertical = {
                     cuentas = {
-                        max = 894092,
-                        min = -865644
+                        max = 1848961.01,
+                        min = 1652800.52
                     },
                     aceleracion = {
-                        amp = 431.313
+                        amp = 46.101
                     }
                 },
                 norte = {
                     cuentas = {
-                        max = 845528,
-                        min = -818320
+                        max = 624508.81,
+                        min = 13470.37
                     },
                     aceleracion = {
-                        amp = 407.847
+                        amp = 141.527
                     }
                 },
                 este = {
                     cuentas = {
-                        max = 882810,
-                        min = -854498
+                        max = 483095.13,
+                        min = -6400.26
                     },
                     aceleracion = {
-                        amp = 425.825
+                        amp = 115.510
                     }
                 }
             }
@@ -338,46 +342,46 @@ f.variables = {
         sotano = {
             interna = {
                 memoria = memorias.uno,
-                libre = 5.6,
-                total = 5.6,
-                extension = "GB"
+                libre = 16060.45,
+                total = 16079.91,
+                extension = "MB"
             },
             externa = {
-                memoria = memorias.tres,
-                libre = 20.272,
-                total = 28.961,
-                extension = "GB"
+                memoria = memorias.dos,
+                libre = 55793.27,
+                total = 60889.13,
+                extension = "MB"
             }
         },
         azotea = {
             interna = {
                 memoria = memorias.uno,
-                libre = 7.4,
-                total = 7.4,
-                extension = "GB"
+                libre = 16064.87,
+                total = 16079.91,
+                extension = "MB"
             },
             externa = {
-                memoria = memorias.tres,
-                libre = 8.9,
-                total = 29.0,
-                extension = "GB"
+                memoria = memorias.dos,
+                libre = 55787.45,
+                total = 60889.13,
+                extension = "MB"
             }
         }
     },
     sistema = {
         sotano = {
-            incertidumbre = "0.10",
-            satelites = 5,
-            latitud = 12.092738,
-            longitud = 77.024999,
-            altitud = 184
+            incertidumbre = "NA",
+            satelites = 17,
+            latitud = 12.082253,
+            longitud = 77.049025,
+            altitud = 183.1
         },
         azotea = {
-            incertidumbre = "0.10",
-            satelites = 11,
-            latitud = 12.093220,
-            longitud = 77.025009,
-            altitud = 225
+            incertidumbre = "NA",
+            satelites = 15,
+            latitud = 12.082298,
+            longitud = 77.049052,
+            altitud = 179.6
         }
     }
 }
