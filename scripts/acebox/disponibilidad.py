@@ -1,7 +1,7 @@
 import subprocess
 
 # Rutas para los archivos de datos de los acelerógrafos en cada ubicación
-sotano = r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-058__Basadre1310\DataSotanoBasadre1310\Datos"
+sotano = r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-057__AmericaTV\DataSotanoAmericatv\Datos"
 azotea = r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-054__SanFelipe890\DataAzotea\Data\DATALOG"
 
 def aguardar(n, datos):

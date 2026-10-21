@@ -52,7 +52,7 @@ HOJA_EVENTOS = "Muestra"
 # ------------------------------------------------------------
 
 CARPETA_DATOS = Path(
-    r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-058__Basadre1310\DataSotanoBasadre1310\Datos"
+    r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-057__AmericaTV\DataSotanoAmericatv\Datos"
 )
 
 

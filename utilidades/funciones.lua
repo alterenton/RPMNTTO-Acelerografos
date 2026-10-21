@@ -66,15 +66,15 @@ local marcas = {
 }
 
 local fecha_mantto = {
-    dia = 15,
+    dia = 07,
     mes = 10,
     ano = 2026
 }
 
 f.variables = {
     caratula = {
-        edificio = "Basadre 1310",
-        nro_informe = 58
+        edificio = "America TV",
+        nro_informe = 57
     },
     fecha = fecha_mantto,
     descripcion = {
@@ -84,7 +84,7 @@ f.variables = {
             marca = marcas.sara.name,
             modelo = marcas.sara.equi,
             tecnologia = tecnologias.FBA,
-            serie = 7343
+            serie = 6879
         },
         azotea = {
             ubicacion = "Azotea",
@@ -97,21 +97,21 @@ f.variables = {
     disponibilidad = {
         sotano = {
             station = "ED",
-            code = "SI68N",
-            location = "-",
+            code = "LI14N",
+            location = "00",
             inicio = {
-                dia = 05,
-                mes = 06,
-                ano = 2025
+                dia = 31,
+                mes = 03,
+                ano = 2026
             },
             final = {
-                dia = 15,
+                dia = 07,
                 mes = 10,
                 ano = 2026
             },
-            tamano = 12.8,
+            tamano = 5.65,
             ext_tam = "GB",
-            archivos = 35802,
+            archivos = 13710,
             carpetas = 0,
             dispone = 100
         },
@@ -138,17 +138,17 @@ f.variables = {
                 marca = marcas.mean.name,
                 modelo = marcas.mean.mode,
                 capacidad = marcas.mean.capa,
-                vin = 228.1,
-                vout = 13.6,
-                areg = 0.1
+                vin = 233.2,
+                vout = 13.7,
+                areg = 0.2
             },
             controlador = {
                 marca = marcas.morning.name,
                 modelo = marcas.morning.mode,
                 capacidad = marcas.morning.capa,
-                vin = 13.6,
-                vbat = 13.6,
-                vcar = 13.6
+                vin = 13.7,
+                vbat = 13.7,
+                vcar = 13.7
             },
             bateria = {
                 marca = marcas.ritar.name,
@@ -156,9 +156,9 @@ f.variables = {
                 arreglo = "paralelo",
                 nro_bat = 2,
                 capa_tota = "12V / 24Ah",
-                vini = 13.4, -- 11:14
-                tdes = 43,
-                vfin = 12.9 --11:57
+                vini = 13.7, -- 11:25
+                tdes = 13,
+                vfin = 12.9 -- 11:38
             }
         },
         azotea = {
@@ -195,35 +195,35 @@ f.variables = {
             offset = {
                 antes = {
                     chz = {
-                        max = 30807,
-                        min = 30610,
+                        max = 8564,
+                        min = 8234,
                         ext = "cts"
                     },
                     chn = {
-                        max = -38144,
-                        min = -38241,
+                        max = -19230,
+                        min = -19464,
                         ext = "cts"
                     },
                     che = {
-                        max = 14598,
-                        min = 14435,
+                        max = -24977,
+                        min = -25165,
                         ext = "cts"
                     }
                 },
                 despues = {
                     chz = {
-                        max = 141,
-                        min = -80,
+                        max = 157,
+                        min = -145,
                         ext = "cts"
                     },
                     chn = {
-                        max = 81,
-                        min = -85,
+                        max = 140,
+                        min = -157,
                         ext = "cts"
                     },
                     che = {
-                        max = 99,
-                        min = -85,
+                        max = 119,
+                        min = -135,
                         ext = "cts"
                     }
                 }
@@ -231,42 +231,42 @@ f.variables = {
             eficaz = {
                 extension = "cts",
                 antes = {
-                    chz = 197,
-                    chn = 97,
-                    che = 163
+                    chz = 330,
+                    chn = 234,
+                    che = 188
                 },
                 despues = {
-                    chz = 221,
-                    chn = 183,
-                    che = 184
+                    chz = 302,
+                    chn = 297,
+                    che = 254
                 }
             },
             calibracion = {
                 vertical = {
                     cuentas = {
-                        max = 1697627.55,
-                        min = 40439.83
+                        max = 1681622.76,
+                        min = 26772.88
                     },
                     aceleracion = {
-                        amp = 389.467
+                        amp = 388.907
                     }
                 },
                 norte = {
                     cuentas = {
-                        max = 1643024.48,
-                        min = -33307.18
+                        max = 1667398.18,
+                        min = -3938.91
                     },
                     aceleracion = {
-                        amp = 391.914
+                        amp = 386.971
                     }
                 },
                 este = {
                     cuentas = {
-                        max = 1681665.14,
-                        min = 14064.39
+                        max = 1654888.68,
+                        min = -9823.69
                     },
                     aceleracion = {
-                        amp = 387.971
+                        amp = 391.087
                     }
                 }
             }
@@ -356,14 +356,14 @@ f.variables = {
         sotano = {
             interna = {
                 memoria = memorias.uno,
-                libre = 7700.08,
-                total = 7786.64,
+                libre = 12498.70,
+                total = 15566.01,
                 extension = "MB"
             },
             externa = {
                 memoria = memorias.dos,
-                libre = 46143.78,
-                total = 60045.52,
+                libre = 54830.15,
+                total = 60964.53,
                 extension = "MB"
             }
         },
@@ -385,10 +385,10 @@ f.variables = {
     sistema = {
         sotano = {
             incertidumbre = "-",
-            satelites = 7,
-            latitud = 12.095698,
-            longitud = 77.044742,
-            altitud = 151.2
+            satelites = 12,
+            latitud = 12.074773,
+            longitud = 77.033412,
+            altitud = 174.7
         },
         azotea = {
             incertidumbre = "NA",

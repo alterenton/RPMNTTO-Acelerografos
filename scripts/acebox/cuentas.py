@@ -2,7 +2,7 @@ import obspy
 import numpy as np
 import matplotlib.pyplot as plt
 
-archivo_calibracion = r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-058__Basadre1310\DataSotanoBasadre1310\Calibracion\2026-10-15-1652-07S.SI68N_003.MSEED"
+archivo_calibracion = r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-057__AmericaTV\DataSotanoAmericatv\Calibracion\2026-10-07-1632-38S.LI14N_003.MSEED"
 
 st = obspy.read(archivo_calibracion)
 
@@ -85,4 +85,4 @@ def aguardar(n):
     else:
         fig.savefig("cuentas.png", bbox_inches="tight")
 
-aguardar(0)
+aguardar(1)
