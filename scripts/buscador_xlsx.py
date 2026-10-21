@@ -52,7 +52,7 @@ HOJA_EVENTOS = "Muestra"
 # ------------------------------------------------------------
 
 CARPETA_DATOS = Path(
-    r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-055__Design\data1\data\events"
+    r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-058__Basadre1310\DataSotanoBasadre1310\Datos"
 )
 
 
@@ -93,9 +93,9 @@ HORAS_LOCAL_A_UTC = 5
 # ============================================================
 
 CANALES = {
-    "E": "C3",
-    "N": "C2",
-    "Z": "C1",
+    "E": "HNE",
+    "N": "HNN",
+    "Z": "HNZ",
 }
 
 
@@ -429,9 +429,9 @@ def crear_inventario(archivos):
                 canal = tr.stats.channel
 
                 if canal not in (
-                    "C3",
-                    "C2",
-                    "C1"
+                    "HNE",
+                    "HNN",
+                    "HNZ"
                 ):
                     continue
 
@@ -483,7 +483,7 @@ def crear_inventario(archivos):
     print("\n")
 
     print(
-        f"Registros C3/C2/C1: "
+        f"Registros HNE/HNN/HNZ: "
         f"{len(inventario)}"
     )
 
@@ -492,9 +492,9 @@ def crear_inventario(archivos):
     )
 
     for canal in (
-        "C3",
-        "C2",
-        "C1"
+        "HNE",
+        "HNN",
+        "HNZ"
     ):
 
         registros = [
@@ -868,9 +868,9 @@ def graficar_evento(
     )
 
     nombres = {
-        "E": "E (C3)",
-        "N": "N (C2)",
-        "Z": "Z (C1)",
+        "E": "E (HNE)",
+        "N": "N (HNN)",
+        "Z": "Z (HNZ)",
     }
 
     for ax, (
@@ -1673,7 +1673,7 @@ def main():
 
         print(
             "\n❌ No se encontraron "
-            "C3/C2/C1."
+            "HNE/HNN/HNZ."
         )
 
         return

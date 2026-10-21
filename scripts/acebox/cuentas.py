@@ -2,7 +2,7 @@ import obspy
 import numpy as np
 import matplotlib.pyplot as plt
 
-archivo_calibracion = r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-054__SanFelipe890\DataAzotea\Calibracion\2026-10-02-2146-44S.JM61N_003.MSEED"
+archivo_calibracion = r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-058__Basadre1310\DataSotanoBasadre1310\Calibracion\2026-10-15-1652-07S.SI68N_003.MSEED"
 
 st = obspy.read(archivo_calibracion)
 
@@ -32,7 +32,7 @@ for ax, tr in zip(axes, st):
         tiempo,
         data,
         linewidth=1.2,
-        label=f"{tr.stats.channel}"
+        label=f"{tr.id}"
     )
     ax.set_xlabel("Tiempo [s]")
     ax.set_ylabel("Amplitud [cuentas]")
@@ -85,4 +85,4 @@ def aguardar(n):
     else:
         fig.savefig("cuentas.png", bbox_inches="tight")
 
-aguardar(1)
+aguardar(0)

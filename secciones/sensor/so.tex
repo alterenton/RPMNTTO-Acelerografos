@@ -43,13 +43,13 @@
 	\SetCell[r=1,c=7]{l} OBSERVACIONES \\
 	\SetCell[r=1,c=7]{l, 17cm} \begin{itemize}
 		\item Ajuste del nivel de offset en los tres canales, el valor promedio en cada canal se debería de encontrar por debajo del umbral de disparo [\qty{1}{\percent g} = \qty{10}{\milli g}].
-		% \item Con el archivo de calibración se procedió a realizar la corrección instrumental y verificar su valor en cuentas, siendo los valores en cada eje los siguientes:
-		% \begin{itemize}
-		% 	\item VERTICAL: [ \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.vertical.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.vertical.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.vertical.aceleracion.amp)}}{\centi\meter\per\square\second}
-		% 	\item NORTE SUR: [ \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.norte.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.norte.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.norte.aceleracion.amp)}}{\centi\meter\per\square\second}
-		% 	\item ESTE OESTE: [ \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.este.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.este.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.este.aceleracion.amp)}}{\centi\meter\per\square\second}
-		% \end{itemize}
-		% \item Con el espectrograma se obtiene la frecuencia de la onda \directlua{tex.print(f.variables.sensor.onda)} registrada en \qty{0.25}{\hertz}.
+		\item Con el archivo de calibración se procedió a realizar la corrección instrumental y verificar su valor en cuentas, siendo los valores en cada eje los siguientes:
+		\begin{itemize}
+			\item VERTICAL: [ \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.vertical.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.vertical.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.vertical.aceleracion.amp)}}{\centi\meter\per\square\second}
+			\item NORTE SUR: [ \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.norte.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.norte.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.norte.aceleracion.amp)}}{\centi\meter\per\square\second}
+			\item ESTE OESTE: [ \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.este.cuentas.min)}}{cts} ; \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.este.cuentas.max)}}{cts} ] - Amplitud: \qty{\directlua{tex.print(f.variables.sensor.sotano.calibracion.este.aceleracion.amp)}}{\centi\meter\per\square\second}
+		\end{itemize}
+		\item Con el espectrograma se obtiene la frecuencia de la onda \directlua{tex.print(f.variables.sensor.onda)} registrada en \qty{0.25}{\hertz}.
 		\item Para la reconstrucción de la señal en términos de aceleración se utilizó la respuesta instrumental mostrada en el <Apartado \ref{sec:formato}: Formato de Polos y Ceros>~de este informe.
 	\end{itemize}
 	% ---------

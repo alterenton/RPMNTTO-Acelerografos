@@ -35,20 +35,20 @@ local marcas = {
     mean = {
         name = "MW Mean Well",
         web = "https://www.meanwell.com/",
-        mode_dice = "LRS Series",
-        capa_dice = "10A@12V"
+        mode = "LRS Series",
+        capa = "10A@12V"
     },
     morning = {
         name = "Morningstar Corp.",
         web = "https://www.morningstarcorp.com/",
-        mode_dice = "SHS-10",
-        capa_dice = "10A@12V"
+        mode = "SHS-10",
+        capa = "10A@12V"
     },
     victron = {
         name = "Victron Energy",
         web = "https://www.victronenergy.com/",
-        mode_dice = "Blue Solar PWM - Light",
-        capa_dice = "20A@24V"
+        mode = "Blue Solar PWM - Light",
+        capa = "20A@24V"
     },
     ritar = {
         name = "RITAR",
@@ -66,25 +66,25 @@ local marcas = {
 }
 
 local fecha_mantto = {
-    dia = 02,
+    dia = 15,
     mes = 10,
     ano = 2026
 }
 
 f.variables = {
     caratula = {
-        edificio = "Design",
-        nro_informe = 55
+        edificio = "Basadre 1310",
+        nro_informe = 58
     },
     fecha = fecha_mantto,
     descripcion = {
         estaciones = "so",
         sotano = {
             ubicacion = "Sótano",
-            marca = marcas.kine.name,
-            modelo = marcas.kine.equi,
+            marca = marcas.sara.name,
+            modelo = marcas.sara.equi,
             tecnologia = tecnologias.FBA,
-            serie = 102955
+            serie = 7343
         },
         azotea = {
             ubicacion = "Azotea",
@@ -96,24 +96,24 @@ f.variables = {
     },
     disponibilidad = {
         sotano = {
-            station = "kmi",
-            code = "kmi",
-            location = "",
+            station = "ED",
+            code = "SI68N",
+            location = "-",
             inicio = {
-                dia = 08,
+                dia = 05,
                 mes = 06,
-                ano = 2020
+                ano = 2025
             },
             final = {
-                dia = 16,
+                dia = 15,
                 mes = 10,
-                ano = 2022
+                ano = 2026
             },
-            tamano = 27.3,
+            tamano = 12.8,
             ext_tam = "GB",
-            archivos = 62772,
+            archivos = 35802,
             carpetas = 0,
-            dispone = 99.2
+            dispone = 100
         },
         azotea = {
             station = "ED",
@@ -135,30 +135,30 @@ f.variables = {
     suministro = {
         sotano = {
             fuente = {
-                marca = marcas.samlex.name,
-                modelo = marcas.samlex.mode,
-                capacidad = marcas.samlex.capa,
-                vin = 226.9,
-                vout = 13.5,
-                areg = 0.0
+                marca = marcas.mean.name,
+                modelo = marcas.mean.mode,
+                capacidad = marcas.mean.capa,
+                vin = 228.1,
+                vout = 13.6,
+                areg = 0.1
             },
             controlador = {
-                marca = marcas.samlex.name,
-                modelo = marcas.samlex.mode,
-                capacidad = marcas.samlex.capa,
-                vin = 13.5,
-                vbat = 13.5,
-                vcar = 13.5
+                marca = marcas.morning.name,
+                modelo = marcas.morning.mode,
+                capacidad = marcas.morning.capa,
+                vin = 13.6,
+                vbat = 13.6,
+                vcar = 13.6
             },
             bateria = {
-                marca = "Plomo Ácido",
-                modelo = "AGM",
-                arreglo = "Front Terminal",
-                nro_bat = 1,
-                capa_tota = "12V 30Ah",
-                vini = 13.2, -- 11 31
-                tdes = 184,
-                vfin = 12.6, --14 35
+                marca = marcas.ritar.name,
+                modelo = marcas.ritar.mode,
+                arreglo = "paralelo",
+                nro_bat = 2,
+                capa_tota = "12V / 24Ah",
+                vini = 13.4, -- 11:14
+                tdes = 43,
+                vfin = 12.9 --11:57
             }
         },
         azotea = {
@@ -190,40 +190,40 @@ f.variables = {
         }
     },
     sensor = {
-        onda = "Interna",
+        onda = "Cuadrada",
         sotano = {
             offset = {
                 antes = {
                     chz = {
-                        max = -70634,
-                        min = -70723,
+                        max = 30807,
+                        min = 30610,
                         ext = "cts"
                     },
                     chn = {
-                        max = -31594,
-                        min = -31623,
+                        max = -38144,
+                        min = -38241,
                         ext = "cts"
                     },
                     che = {
-                        max = -48634,
-                        min = -48967,
+                        max = 14598,
+                        min = 14435,
                         ext = "cts"
                     }
                 },
                 despues = {
                     chz = {
-                        max = 100,
-                        min = -50,
+                        max = 141,
+                        min = -80,
                         ext = "cts"
                     },
                     chn = {
-                        max = 100,
-                        min = -100,
+                        max = 81,
+                        min = -85,
                         ext = "cts"
                     },
                     che = {
-                        max = 100,
-                        min = -200,
+                        max = 99,
+                        min = -85,
                         ext = "cts"
                     }
                 }
@@ -231,42 +231,42 @@ f.variables = {
             eficaz = {
                 extension = "cts",
                 antes = {
-                    chz = -70673,
-                    chn = -31535,
-                    che = -48685
+                    chz = 197,
+                    chn = 97,
+                    che = 163
                 },
                 despues = {
-                    chz = 0.234,
-                    chn = 0.864,
-                    che = 0.325
+                    chz = 221,
+                    chn = 183,
+                    che = 184
                 }
             },
             calibracion = {
                 vertical = {
                     cuentas = {
-                        max = 1,
-                        min = -1
+                        max = 1697627.55,
+                        min = 40439.83
                     },
                     aceleracion = {
-                        amp = 1
+                        amp = 389.467
                     }
                 },
                 norte = {
                     cuentas = {
-                        max = 1,
-                        min = -1
+                        max = 1643024.48,
+                        min = -33307.18
                     },
                     aceleracion = {
-                        amp = 1
+                        amp = 391.914
                     }
                 },
                 este = {
                     cuentas = {
-                        max = 1,
-                        min = -1
+                        max = 1681665.14,
+                        min = 14064.39
                     },
                     aceleracion = {
-                        amp = 1
+                        amp = 387.971
                     }
                 }
             }
@@ -356,15 +356,15 @@ f.variables = {
         sotano = {
             interna = {
                 memoria = memorias.uno,
-                libre = 0.011,
-                total = 29,
-                extension = "GB"
+                libre = 7700.08,
+                total = 7786.64,
+                extension = "MB"
             },
             externa = {
-                memoria = "No aplica",
-                libre = 0,
-                total = 1,
-                extension = "GB",
+                memoria = memorias.dos,
+                libre = 46143.78,
+                total = 60045.52,
+                extension = "MB"
             }
         },
         azotea = {
@@ -384,11 +384,11 @@ f.variables = {
     },
     sistema = {
         sotano = {
-            incertidumbre = "",
-            satelites = "",
-            latitud = 12.130591,
-            longitud = 77.032042,
-            altitud = 88
+            incertidumbre = "-",
+            satelites = 7,
+            latitud = 12.095698,
+            longitud = 77.044742,
+            altitud = 151.2
         },
         azotea = {
             incertidumbre = "NA",

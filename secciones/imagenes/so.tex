@@ -107,7 +107,7 @@
     SEÑALES DEL SENSOR \\
     ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
     NIVELACIÓN MECÁNICA EN EL HORIZONTAL \\
-    \SetCell{c} \adjincludegraphics[height=7.5cm, angle=0]{fotos/sotano/nivelacion1} \\
+    \SetCell{c} \adjincludegraphics[width=7.5cm, angle=-90]{fotos/sotano/nivelacion1} \\
     \adjincludegraphics[width=\linewidth, height=7.5cm]{fotos/sotano/nivelacion2} \\
     OBSERVACIONES \\
     \begin{itemize}
@@ -152,62 +152,62 @@
     \end{itemize}
 \end{tblr}
 % 
-% \newpage
-% % Cuentas
-% \begin{tblr}{
-%         colspec={X},
-%         row{2} = {bg=SuCielo},
-%         row{3,Y} = {bg=gray!25},
-%     } % 4
-%     SEÑALES DEL SENSOR \\
-%     ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
-%     CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [OUTPUT - Cuentas] \\
-%     \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/sotano/calibracion1} \\
-%     \adjincludegraphics[width=\linewidth, height=7.5cm]{graficas/sotano/cuentas} \\
-%     OBSERVACIONES \\
-%     \begin{itemize}
-%         \item Superior: Señal de calibración inyectada vía software desde el acelerógrafo (forma de onda: \directlua{tex.print(f.variables.sensor.onda)} de Amplitud 1VDC y Frecuencia 0.25Hz)
-%         \item Inferior: Señal censada y registrada por el acelerógrafo. Se valida la calibración reconstruyendo la señal registrada en términos de cuentas.
-%     \end{itemize}
-% \end{tblr}
+\newpage
+% Cuentas
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 4
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [OUTPUT - Cuentas] \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/sotano/calibracion1} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{graficas/sotano/cuentas} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Superior: Señal de calibración inyectada vía software desde el acelerógrafo (forma de onda: \directlua{tex.print(f.variables.sensor.onda)} de Amplitud 1VDC y Frecuencia 0.25Hz)
+        \item Inferior: Señal censada y registrada por el acelerógrafo. Se valida la calibración reconstruyendo la señal registrada en términos de cuentas.
+    \end{itemize}
+\end{tblr}
 % 
-% \newpage
-% % Aceleracion
-% \begin{tblr}{
-%         colspec={X},
-%         row{2} = {bg=SuCielo},
-%         row{3,Y} = {bg=gray!25},
-%     } % 5
-%     SEÑALES DEL SENSOR \\
-%     ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
-%     CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [OUTPUT - \unit{\centi\meter\per\square\second}] \\
-%     \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/sotano/calibracion1} \\
-%     \adjincludegraphics[width=\linewidth, height=7.5cm]{graficas/sotano/aceleracion} \\
-%     OBSERVACIONES \\
-%     \begin{itemize}
-%         \item Superior: Señal de calibración inyectada vía software desde el acelerógrafo (forma de onda: \directlua{tex.print(f.variables.sensor.onda)} de Amplitud 1VDC y Frecuencia 0.25Hz)
-%         \item Inferior: Señal censada y registrada por el acelerógrafo. Se valida la calibración reconstruyendo la señal registrada en términos de aceleración [\unit{\centi\meter\per\square\second}]
-%     \end{itemize}
-% \end{tblr}
+\newpage
+% Aceleracion
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 5
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [OUTPUT - \unit{\centi\meter\per\square\second}] \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{pantallazos/sotano/calibracion1} \\
+    \adjincludegraphics[width=\linewidth, height=7.5cm]{graficas/sotano/aceleracion} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item Superior: Señal de calibración inyectada vía software desde el acelerógrafo (forma de onda: \directlua{tex.print(f.variables.sensor.onda)} de Amplitud 1VDC y Frecuencia 0.25Hz)
+        \item Inferior: Señal censada y registrada por el acelerógrafo. Se valida la calibración reconstruyendo la señal registrada en términos de aceleración [\unit{\centi\meter\per\square\second}]
+    \end{itemize}
+\end{tblr}
 % 
-% \newpage
-% % Espectrograma
-% \begin{tblr}{
-%         colspec={X},
-%         row{2} = {bg=SuCielo},
-%         row{3,Y} = {bg=gray!25},
-%     } % 6
-%     SEÑALES DEL SENSOR \\
-%     ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
-%     CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [ESPECTROGRAMA] \\
-%     \adjincludegraphics[width=\linewidth]{graficas/sotano/espectrograma} \\
-%     OBSERVACIONES \\
-%     \begin{itemize}
-%         \item El espectrograma es un gráfico tridimensional en 2D que muestra cómo cambian las frecuencias de la señal a lo largo del tiempo.
-%         \item El eje X representa el tiempo, el eje Y la frecuencia y el nivel de color o brillo indica la energía o amplitud de esa frecuencia.
-%         \item Permite identificar exactamente que frecuencia está presente, la ocurrencia e intensidad; lo que facilita la detección de componentes sismológicos.
-%     \end{itemize}
-% \end{tblr}
+\newpage
+% Espectrograma
+\begin{tblr}{
+        colspec={X},
+        row{2} = {bg=SuCielo},
+        row{3,Y} = {bg=gray!25},
+    } % 6
+    SEÑALES DEL SENSOR \\
+    ACELERÓGRAFO \MakeUppercase{\directlua{tex.print(f.variables.descripcion.sotano.ubicacion)}} \\
+    CALIBRACIÓN DEL ACELERÓGRAFO - INYECCIÓN DE LA SEÑAL DE CALIBRACIÓN [ESPECTROGRAMA] \\
+    \adjincludegraphics[width=\linewidth]{graficas/sotano/espectrograma} \\
+    OBSERVACIONES \\
+    \begin{itemize}
+        \item El espectrograma es un gráfico tridimensional en 2D que muestra cómo cambian las frecuencias de la señal a lo largo del tiempo.
+        \item El eje X representa el tiempo, el eje Y la frecuencia y el nivel de color o brillo indica la energía o amplitud de esa frecuencia.
+        \item Permite identificar exactamente que frecuencia está presente, la ocurrencia e intensidad; lo que facilita la detección de componentes sismológicos.
+    \end{itemize}
+\end{tblr}
 % 
 % <<<<<<<<<<<<<<
 % final
