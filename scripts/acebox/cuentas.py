@@ -2,7 +2,7 @@ import obspy
 import numpy as np
 import matplotlib.pyplot as plt
 
-archivo_calibracion = r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-057__AmericaTV\DataSotanoAmericatv\Calibracion\2026-10-07-1632-38S.LI14N_003.MSEED"
+archivo_calibracion = r"C:\Users\Hyerson\Documents\Informes_Mantenimientos\RPMNTTO-2026-061__Felizia\DataSotanoFelizia\Calibracion\2026-10-19-1649-04S.CH05N_003.MSEED"
 
 st = obspy.read(archivo_calibracion)
 
